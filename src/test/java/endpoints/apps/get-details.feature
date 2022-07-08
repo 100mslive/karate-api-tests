@@ -1,4 +1,3 @@
-@debug
 Feature: get details app
 
   Background:

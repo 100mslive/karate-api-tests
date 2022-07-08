@@ -1,7 +1,7 @@
 {
-  "subdomain_name": "sahil-conf7861",
+  "subdomain_name": "sahil-${appName}",
   "app_type": "VIDEOCONF",
-  "app_name": "conf7861",
+  "app_name": "${appName}",
   "region": "in",
   "ts_template_id": 10,
   "starter_kit_id": 6,
