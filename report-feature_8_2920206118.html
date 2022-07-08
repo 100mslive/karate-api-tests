@@ -1,0 +1,1598 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: endpoints/apps/get-details.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>demo</td>
+      <td>08 Jul 2022, 08:32</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">endpoints/apps/get-details.feature</td>
+          <td      class="passed"    >24</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">24</td>
+
+          <td  class="passed"    >1</td>
+          <td >0</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="6163882239">6.163</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_4075208210.html">@debug</a>
+</div>
+
+
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">endpoints/apps/get-details.feature</span>
+
+
+</div>
+
+        <div class="description indention">get details app</div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">4.952</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url 'https://qa-in2.100ms.live/hmsapi'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>08:32:43.971 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def tokengenerator = Java.type('utils.TokenGenerator');</span>
+
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def token = tokengenerator.getToken();</span>
+
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def result = call read('add-new-app.feature')</span>
+
+  <span class="lead-duration duration">2.483</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">endpoints/apps/add-new-app.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url 'https://qa-in2.100ms.live/hmsapi'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def tokengenerator = Java.type('utils.TokenGenerator');</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def token = tokengenerator.getToken();</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path '/add-new-app'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">header authorization = token</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def payload = read('../../data/add-new-app.json')</span>
+
+  <span class="lead-duration duration">0.069</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print payload</span>
+
+  <span class="lead-duration duration">0.014</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>08:32:44.130 [print] {
+  &quot;subdomain_name&quot;: &quot;sahil-conf7861&quot;,
+  &quot;app_type&quot;: &quot;VIDEOCONF&quot;,
+  &quot;app_name&quot;: &quot;conf7861&quot;,
+  &quot;region&quot;: &quot;in&quot;,
+  &quot;ts_template_id&quot;: 10,
+  &quot;starter_kit_id&quot;: 6,
+  &quot;roles&quot;: [
+    {
+      &quot;role&quot;: &quot;host&quot;,
+      &quot;permissions&quot;: {
+        &quot;mute&quot;: true,
+        &quot;unmute&quot;: true,
+        &quot;removeOthers&quot;: true,
+        &quot;endRoom&quot;: true,
+        &quot;changeRole&quot;: true,
+        &quot;lockRoom&quot;: false,
+        &quot;sendRoomState&quot;: false
+      },
+      &quot;subscribeDegradation&quot;: true,
+      &quot;priority&quot;: 1,
+      &quot;chat&quot;: {
+        &quot;privateMessage&quot;: [
+        ]
+      },
+      &quot;screenshare&quot;: {
+        &quot;permissions&quot;: [
+        ]
+      },
+      &quot;annotation&quot;: {
+        &quot;permissions&quot;: [
+        ]
+      },
+      &quot;virtualBackgrounds&quot;: {
+        &quot;set&quot;: true,
+        &quot;upload&quot;: false
+      },
+      &quot;spotlight&quot;: {
+        &quot;permissions&quot;: [
+        ]
+      },
+      &quot;raiseHand&quot;: {
+        &quot;raiseOwn&quot;: false,
+        &quot;lowerOthers&quot;: true
+      },
+      &quot;googleDrive&quot;: {
+        &quot;permissions&quot;: [
+        ]
+      },
+      &quot;youtube&quot;: {
+        &quot;permissions&quot;: [
+        ]
+      },
+      &quot;advancedSettings&quot;: {
+        &quot;publish&quot;: {
+          &quot;audio&quot;: true,
+          &quot;video&quot;: true,
+          &quot;screenshare&quot;: true,
+          &quot;params&quot;: {
+            &quot;video&quot;: {
+              &quot;bitRate&quot;: 300,
+              &quot;frameRate&quot;: 30,
+              &quot;codec&quot;: &quot;vp8&quot;
+            },
+            &quot;screenshare&quot;: {
+              &quot;bitRate&quot;: null,
+              &quot;frameRate&quot;: 10,
+              &quot;codec&quot;: &quot;vp8&quot;
+            }
+          }
+        },
+        &quot;subscribe&quot;: {
+          &quot;to&quot;: [
+            &quot;guest&quot;,
+            &quot;host&quot;
+          ]
+        }
+      },
+      &quot;video_quality&quot;: &quot;_360p&quot;,
+      &quot;screenshare_quality&quot;: &quot;_1080p&quot;,
+      &quot;default&quot;: false,
+      &quot;video_aspect_ratio&quot;: &quot;4:3&quot;
+    },
+    {
+      &quot;role&quot;: &quot;guest&quot;,
+      &quot;permissions&quot;: {
+        &quot;mute&quot;: false,
+        &quot;unmute&quot;: false,
+        &quot;removeOthers&quot;: false,
+        &quot;endRoom&quot;: false,
+        &quot;changeRole&quot;: false,
+        &quot;lockRoom&quot;: false,
+        &quot;sendRoomState&quot;: false
+      },
+      &quot;subscribeDegradation&quot;: true,
+      &quot;priority&quot;: 1,
+      &quot;chat&quot;: {
+        &quot;privateMessage&quot;: [
+        ]
+      },
+      &quot;screenshare&quot;: {
+        &quot;permissions&quot;: [
+        ]
+      },
+      &quot;annotation&quot;: {
+        &quot;permissions&quot;: [
+        ]
+      },
+      &quot;virtualBackgrounds&quot;: {
+        &quot;set&quot;: true,
+        &quot;upload&quot;: false
+      },
+      &quot;spotlight&quot;: {
+        &quot;permissions&quot;: [
+        ]
+      },
+      &quot;raiseHand&quot;: {
+        &quot;raiseOwn&quot;: false,
+        &quot;lowerOthers&quot;: true
+      },
+      &quot;googleDrive&quot;: {
+        &quot;permissions&quot;: [
+        ]
+      },
+      &quot;youtube&quot;: {
+        &quot;permissions&quot;: [
+        ]
+      },
+      &quot;advancedSettings&quot;: {
+        &quot;publish&quot;: {
+          &quot;audio&quot;: true,
+          &quot;video&quot;: true,
+          &quot;screenshare&quot;: true,
+          &quot;params&quot;: {
+            &quot;video&quot;: {
+              &quot;bitRate&quot;: 300,
+              &quot;frameRate&quot;: 30,
+              &quot;codec&quot;: &quot;vp8&quot;
+            },
+            &quot;screenshare&quot;: {
+              &quot;bitRate&quot;: null,
+              &quot;frameRate&quot;: 10,
+              &quot;codec&quot;: &quot;vp8&quot;
+            }
+          }
+        },
+        &quot;subscribe&quot;: {
+          &quot;to&quot;: [
+            &quot;host&quot;,
+            &quot;guest&quot;
+          ]
+        }
+      },
+      &quot;video_quality&quot;: &quot;_360p&quot;,
+      &quot;screenshare_quality&quot;: &quot;_1080p&quot;,
+      &quot;default&quot;: false,
+      &quot;video_aspect_ratio&quot;: &quot;4:3&quot;
+    }
+  ]
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request payload</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">2.370</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>08:32:44.434 request:
+1 &gt; POST https://qa-in2.100ms.live/hmsapi/add-new-app
+1 &gt; authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2ZXJzaW9uIjoyLCJ0eXBlIjoibWFuYWdlbWVudCIsImFwcF9kYXRhIjpudWxsLCJhY2Nlc3Nfa2V5IjoiNjJjNjk2YTk4YzllN2Y3Nzk2Y2Q5ZWM2IiwiZXhwIjoxNjY1ODIyMDYzLCJqdGkiOiI3NDU3YWIwMC1iYzdiLTQzMWItYmY0MS04ZmE0ODU2YWQyMjkiLCJpYXQiOjE2NTcxODIwNjMsImlzcyI6IjYyYzY5NmE4OGM5ZTdmNzc5NmNkOWVjMiIsIm5iZiI6MTY1NzE4MjA2Mywic3ViIjoiYXBpIn0.AhP_c5v-m1HZN6yqZ6s3R6Nu23-cfGhBzl2SSlUOp_A
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 1775
+1 &gt; Host: qa-in2.100ms.live
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_332)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;subdomain_name&quot;:&quot;sahil-conf7861&quot;,&quot;app_type&quot;:&quot;VIDEOCONF&quot;,&quot;app_name&quot;:&quot;conf7861&quot;,&quot;region&quot;:&quot;in&quot;,&quot;ts_template_id&quot;:10,&quot;starter_kit_id&quot;:6,&quot;roles&quot;:[{&quot;role&quot;:&quot;host&quot;,&quot;permissions&quot;:{&quot;mute&quot;:true,&quot;unmute&quot;:true,&quot;removeOthers&quot;:true,&quot;endRoom&quot;:true,&quot;changeRole&quot;:true,&quot;lockRoom&quot;:false,&quot;sendRoomState&quot;:false},&quot;subscribeDegradation&quot;:true,&quot;priority&quot;:1,&quot;chat&quot;:{&quot;privateMessage&quot;:[]},&quot;screenshare&quot;:{&quot;permissions&quot;:[]},&quot;annotation&quot;:{&quot;permissions&quot;:[]},&quot;virtualBackgrounds&quot;:{&quot;set&quot;:true,&quot;upload&quot;:false},&quot;spotlight&quot;:{&quot;permissions&quot;:[]},&quot;raiseHand&quot;:{&quot;raiseOwn&quot;:false,&quot;lowerOthers&quot;:true},&quot;googleDrive&quot;:{&quot;permissions&quot;:[]},&quot;youtube&quot;:{&quot;permissions&quot;:[]},&quot;advancedSettings&quot;:{&quot;publish&quot;:{&quot;audio&quot;:true,&quot;video&quot;:true,&quot;screenshare&quot;:true,&quot;params&quot;:{&quot;video&quot;:{&quot;bitRate&quot;:300,&quot;frameRate&quot;:30,&quot;codec&quot;:&quot;vp8&quot;},&quot;screenshare&quot;:{&quot;bitRate&quot;:null,&quot;frameRate&quot;:10,&quot;codec&quot;:&quot;vp8&quot;}}},&quot;subscribe&quot;:{&quot;to&quot;:[&quot;guest&quot;,&quot;host&quot;]}},&quot;video_quality&quot;:&quot;_360p&quot;,&quot;screenshare_quality&quot;:&quot;_1080p&quot;,&quot;default&quot;:false,&quot;video_aspect_ratio&quot;:&quot;4:3&quot;},{&quot;role&quot;:&quot;guest&quot;,&quot;permissions&quot;:{&quot;mute&quot;:false,&quot;unmute&quot;:false,&quot;removeOthers&quot;:false,&quot;endRoom&quot;:false,&quot;changeRole&quot;:false,&quot;lockRoom&quot;:false,&quot;sendRoomState&quot;:false},&quot;subscribeDegradation&quot;:true,&quot;priority&quot;:1,&quot;chat&quot;:{&quot;privateMessage&quot;:[]},&quot;screenshare&quot;:{&quot;permissions&quot;:[]},&quot;annotation&quot;:{&quot;permissions&quot;:[]},&quot;virtualBackgrounds&quot;:{&quot;set&quot;:true,&quot;upload&quot;:false},&quot;spotlight&quot;:{&quot;permissions&quot;:[]},&quot;raiseHand&quot;:{&quot;raiseOwn&quot;:false,&quot;lowerOthers&quot;:true},&quot;googleDrive&quot;:{&quot;permissions&quot;:[]},&quot;youtube&quot;:{&quot;permissions&quot;:[]},&quot;advancedSettings&quot;:{&quot;publish&quot;:{&quot;audio&quot;:true,&quot;video&quot;:true,&quot;screenshare&quot;:true,&quot;params&quot;:{&quot;video&quot;:{&quot;bitRate&quot;:300,&quot;frameRate&quot;:30,&quot;codec&quot;:&quot;vp8&quot;},&quot;screenshare&quot;:{&quot;bitRate&quot;:null,&quot;frameRate&quot;:10,&quot;codec&quot;:&quot;vp8&quot;}}},&quot;subscribe&quot;:{&quot;to&quot;:[&quot;host&quot;,&quot;guest&quot;]}},&quot;video_quality&quot;:&quot;_360p&quot;,&quot;screenshare_quality&quot;:&quot;_1080p&quot;,&quot;default&quot;:false,&quot;video_aspect_ratio&quot;:&quot;4:3&quot;}]}
+
+08:32:46.501 response time in milliseconds: 2067
+1 &lt; 200
+1 &lt; server: istio-envoy
+1 &lt; date: Fri, 08 Jul 2022 08:32:46 GMT
+1 &lt; content-type: application/json
+1 &lt; cache-control: no-store
+1 &lt; x-request-id: 1c76b24f-1740-4ba4-8925-9ea495300f68
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; content-length: 514
+1 &lt; vary: Origin
+1 &lt; x-envoy-upstream-service-time: 967
+1 &lt; content-security-policy: frame-ancestors none;
+1 &lt; strict-transport-security: max-age=31536000; includeSubDomains
+1 &lt; x-xss-protection: 1; mode=block
+1 &lt; x-content-type-options: nosniff
+1 &lt; referrer-policy: no-referrer
+1 &lt; x-download-options: noopen
+1 &lt; x-dns-prefetch-control: off
+1 &lt; permissions-policy: camera 'none';microphone 'none';geolocation 'none';encrypted-media 'none';payment 'none';speaker 'none';usb 'none';
+{&quot;success&quot;: true, &quot;role&quot;: &quot;host&quot;, &quot;role_link&quot;: {&quot;identifier&quot;: &quot;wzv-ysl-fgc&quot;, &quot;is_active&quot;: true, &quot;subdomain&quot;: &quot;sahil-conf7861.qa-app.100ms.live&quot;}, &quot;room_links&quot;: {&quot;guest&quot;: {&quot;identifier&quot;: &quot;vzz-gis-etw&quot;, &quot;is_active&quot;: true, &quot;subdomain&quot;: &quot;sahil-conf7861.qa-app.100ms.live&quot;}, &quot;host&quot;: {&quot;identifier&quot;: &quot;wzv-ysl-fgc&quot;, &quot;is_active&quot;: true, &quot;subdomain&quot;: &quot;sahil-conf7861.qa-app.100ms.live&quot;}}, &quot;show_onboarding&quot;: false, &quot;msg&quot;: &quot;app created successfully&quot;, &quot;data&quot;: {}, &quot;room_id&quot;: &quot;62c7ebadec1209a809f7dddc&quot;, &quot;api_version&quot;: &quot;2.0.181&quot;}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>08:32:46.503 [print] {
+  &quot;success&quot;: true,
+  &quot;role&quot;: &quot;host&quot;,
+  &quot;role_link&quot;: {
+    &quot;identifier&quot;: &quot;wzv-ysl-fgc&quot;,
+    &quot;is_active&quot;: true,
+    &quot;subdomain&quot;: &quot;sahil-conf7861.qa-app.100ms.live&quot;
+  },
+  &quot;room_links&quot;: {
+    &quot;guest&quot;: {
+      &quot;identifier&quot;: &quot;vzz-gis-etw&quot;,
+      &quot;is_active&quot;: true,
+      &quot;subdomain&quot;: &quot;sahil-conf7861.qa-app.100ms.live&quot;
+    },
+    &quot;host&quot;: {
+      &quot;identifier&quot;: &quot;wzv-ysl-fgc&quot;,
+      &quot;is_active&quot;: true,
+      &quot;subdomain&quot;: &quot;sahil-conf7861.qa-app.100ms.live&quot;
+    }
+  },
+  &quot;show_onboarding&quot;: false,
+  &quot;msg&quot;: &quot;app created successfully&quot;,
+  &quot;data&quot;: {
+  },
+  &quot;room_id&quot;: &quot;62c7ebadec1209a809f7dddc&quot;,
+  &quot;api_version&quot;: &quot;2.0.181&quot;
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_4075208210.html">@debug</a>
+</div>
+
+
+  <span class="lead-duration duration">1.211</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">get all users and then get the first user by id</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-7" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-8" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print result</span>
+
+  <span class="lead-duration duration">0.012</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>08:32:46.516 [print] {
+  &quot;tokengenerator&quot;: &quot;utils.TokenGenerator&quot;,
+  &quot;responseHeaders&quot;: {
+    &quot;server&quot;: [
+      &quot;istio-envoy&quot;
+    ],
+    &quot;date&quot;: [
+      &quot;Fri, 08 Jul 2022 08:32:46 GMT&quot;
+    ],
+    &quot;content-type&quot;: [
+      &quot;application/json&quot;
+    ],
+    &quot;cache-control&quot;: [
+      &quot;no-store&quot;
+    ],
+    &quot;x-request-id&quot;: [
+      &quot;1c76b24f-1740-4ba4-8925-9ea495300f68&quot;
+    ],
+    &quot;x-frame-options&quot;: [
+      &quot;SAMEORIGIN&quot;
+    ],
+    &quot;content-length&quot;: [
+      &quot;514&quot;
+    ],
+    &quot;vary&quot;: [
+      &quot;Origin&quot;
+    ],
+    &quot;x-envoy-upstream-service-time&quot;: [
+      &quot;967&quot;
+    ],
+    &quot;content-security-policy&quot;: [
+      &quot;frame-ancestors none;&quot;
+    ],
+    &quot;strict-transport-security&quot;: [
+      &quot;max-age=31536000; includeSubDomains&quot;
+    ],
+    &quot;x-xss-protection&quot;: [
+      &quot;1; mode=block&quot;
+    ],
+    &quot;x-content-type-options&quot;: [
+      &quot;nosniff&quot;
+    ],
+    &quot;referrer-policy&quot;: [
+      &quot;no-referrer&quot;
+    ],
+    &quot;x-download-options&quot;: [
+      &quot;noopen&quot;
+    ],
+    &quot;x-dns-prefetch-control&quot;: [
+      &quot;off&quot;
+    ],
+    &quot;permissions-policy&quot;: [
+      &quot;camera 'none';microphone 'none';geolocation 'none';encrypted-media 'none';payment 'none';speaker 'none';usb 'none';&quot;
+    ]
+  },
+  &quot;responseStatus&quot;: 200,
+  &quot;payload&quot;: {
+    &quot;subdomain_name&quot;: &quot;sahil-conf7861&quot;,
+    &quot;app_type&quot;: &quot;VIDEOCONF&quot;,
+    &quot;app_name&quot;: &quot;conf7861&quot;,
+    &quot;region&quot;: &quot;in&quot;,
+    &quot;ts_template_id&quot;: 10,
+    &quot;starter_kit_id&quot;: 6,
+    &quot;roles&quot;: [
+      {
+        &quot;role&quot;: &quot;host&quot;,
+        &quot;permissions&quot;: {
+          &quot;mute&quot;: true,
+          &quot;unmute&quot;: true,
+          &quot;removeOthers&quot;: true,
+          &quot;endRoom&quot;: true,
+          &quot;changeRole&quot;: true,
+          &quot;lockRoom&quot;: false,
+          &quot;sendRoomState&quot;: false
+        },
+        &quot;subscribeDegradation&quot;: true,
+        &quot;priority&quot;: 1,
+        &quot;chat&quot;: {
+          &quot;privateMessage&quot;: [
+          ]
+        },
+        &quot;screenshare&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;annotation&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;virtualBackgrounds&quot;: {
+          &quot;set&quot;: true,
+          &quot;upload&quot;: false
+        },
+        &quot;spotlight&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;raiseHand&quot;: {
+          &quot;raiseOwn&quot;: false,
+          &quot;lowerOthers&quot;: true
+        },
+        &quot;googleDrive&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;youtube&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;advancedSettings&quot;: {
+          &quot;publish&quot;: {
+            &quot;audio&quot;: true,
+            &quot;video&quot;: true,
+            &quot;screenshare&quot;: true,
+            &quot;params&quot;: {
+              &quot;video&quot;: {
+                &quot;bitRate&quot;: 300,
+                &quot;frameRate&quot;: 30,
+                &quot;codec&quot;: &quot;vp8&quot;
+              },
+              &quot;screenshare&quot;: {
+                &quot;bitRate&quot;: null,
+                &quot;frameRate&quot;: 10,
+                &quot;codec&quot;: &quot;vp8&quot;
+              }
+            }
+          },
+          &quot;subscribe&quot;: {
+            &quot;to&quot;: [
+              &quot;guest&quot;,
+              &quot;host&quot;
+            ]
+          }
+        },
+        &quot;video_quality&quot;: &quot;_360p&quot;,
+        &quot;screenshare_quality&quot;: &quot;_1080p&quot;,
+        &quot;default&quot;: false,
+        &quot;video_aspect_ratio&quot;: &quot;4:3&quot;
+      },
+      {
+        &quot;role&quot;: &quot;guest&quot;,
+        &quot;permissions&quot;: {
+          &quot;mute&quot;: false,
+          &quot;unmute&quot;: false,
+          &quot;removeOthers&quot;: false,
+          &quot;endRoom&quot;: false,
+          &quot;changeRole&quot;: false,
+          &quot;lockRoom&quot;: false,
+          &quot;sendRoomState&quot;: false
+        },
+        &quot;subscribeDegradation&quot;: true,
+        &quot;priority&quot;: 1,
+        &quot;chat&quot;: {
+          &quot;privateMessage&quot;: [
+          ]
+        },
+        &quot;screenshare&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;annotation&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;virtualBackgrounds&quot;: {
+          &quot;set&quot;: true,
+          &quot;upload&quot;: false
+        },
+        &quot;spotlight&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;raiseHand&quot;: {
+          &quot;raiseOwn&quot;: false,
+          &quot;lowerOthers&quot;: true
+        },
+        &quot;googleDrive&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;youtube&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;advancedSettings&quot;: {
+          &quot;publish&quot;: {
+            &quot;audio&quot;: true,
+            &quot;video&quot;: true,
+            &quot;screenshare&quot;: true,
+            &quot;params&quot;: {
+              &quot;video&quot;: {
+                &quot;bitRate&quot;: 300,
+                &quot;frameRate&quot;: 30,
+                &quot;codec&quot;: &quot;vp8&quot;
+              },
+              &quot;screenshare&quot;: {
+                &quot;bitRate&quot;: null,
+                &quot;frameRate&quot;: 10,
+                &quot;codec&quot;: &quot;vp8&quot;
+              }
+            }
+          },
+          &quot;subscribe&quot;: {
+            &quot;to&quot;: [
+              &quot;host&quot;,
+              &quot;guest&quot;
+            ]
+          }
+        },
+        &quot;video_quality&quot;: &quot;_360p&quot;,
+        &quot;screenshare_quality&quot;: &quot;_1080p&quot;,
+        &quot;default&quot;: false,
+        &quot;video_aspect_ratio&quot;: &quot;4:3&quot;
+      }
+    ]
+  },
+  &quot;response&quot;: {
+    &quot;success&quot;: true,
+    &quot;role&quot;: &quot;host&quot;,
+    &quot;role_link&quot;: {
+      &quot;identifier&quot;: &quot;wzv-ysl-fgc&quot;,
+      &quot;is_active&quot;: true,
+      &quot;subdomain&quot;: &quot;sahil-conf7861.qa-app.100ms.live&quot;
+    },
+    &quot;room_links&quot;: {
+      &quot;guest&quot;: {
+        &quot;identifier&quot;: &quot;vzz-gis-etw&quot;,
+        &quot;is_active&quot;: true,
+        &quot;subdomain&quot;: &quot;sahil-conf7861.qa-app.100ms.live&quot;
+      },
+      &quot;host&quot;: {
+        &quot;identifier&quot;: &quot;wzv-ysl-fgc&quot;,
+        &quot;is_active&quot;: true,
+        &quot;subdomain&quot;: &quot;sahil-conf7861.qa-app.100ms.live&quot;
+      }
+    },
+    &quot;show_onboarding&quot;: false,
+    &quot;msg&quot;: &quot;app created successfully&quot;,
+    &quot;data&quot;: {
+    },
+    &quot;room_id&quot;: &quot;62c7ebadec1209a809f7dddc&quot;,
+    &quot;api_version&quot;: &quot;2.0.181&quot;
+  },
+  &quot;token&quot;: &quot;Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2ZXJzaW9uIjoyLCJ0eXBlIjoibWFuYWdlbWVudCIsImFwcF9kYXRhIjpudWxsLCJhY2Nlc3Nfa2V5IjoiNjJjNjk2YTk4YzllN2Y3Nzk2Y2Q5ZWM2IiwiZXhwIjoxNjY1ODIyMDYzLCJqdGkiOiI3NDU3YWIwMC1iYzdiLTQzMWItYmY0MS04ZmE0ODU2YWQyMjkiLCJpYXQiOjE2NTcxODIwNjMsImlzcyI6IjYyYzY5NmE4OGM5ZTdmNzc5NmNkOWVjMiIsIm5iZiI6MTY1NzE4MjA2Mywic3ViIjoiYXBpIn0.AhP_c5v-m1HZN6yqZ6s3R6Nu23-cfGhBzl2SSlUOp_A&quot;
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'apps/get-details'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param domain = result.response.role_link.subdomain</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param room_id = result.response.role_link.identifier</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header authorization = token</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">1.194</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details">
+        <pre>08:32:46.519 request:
+2 &gt; GET https://qa-in2.100ms.live/hmsapi/apps/get-details?room_id=wzv-ysl-fgc&amp;domain=sahil-conf7861.qa-app.100ms.live
+2 &gt; authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2ZXJzaW9uIjoyLCJ0eXBlIjoibWFuYWdlbWVudCIsImFwcF9kYXRhIjpudWxsLCJhY2Nlc3Nfa2V5IjoiNjJjNjk2YTk4YzllN2Y3Nzk2Y2Q5ZWM2IiwiZXhwIjoxNjY1ODIyMDYzLCJqdGkiOiI3NDU3YWIwMC1iYzdiLTQzMWItYmY0MS04ZmE0ODU2YWQyMjkiLCJpYXQiOjE2NTcxODIwNjMsImlzcyI6IjYyYzY5NmE4OGM5ZTdmNzc5NmNkOWVjMiIsIm5iZiI6MTY1NzE4MjA2Mywic3ViIjoiYXBpIn0.AhP_c5v-m1HZN6yqZ6s3R6Nu23-cfGhBzl2SSlUOp_A
+2 &gt; Host: qa-in2.100ms.live
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_332)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+08:32:47.712 response time in milliseconds: 1193
+2 &lt; 200
+2 &lt; server: istio-envoy
+2 &lt; date: Fri, 08 Jul 2022 08:32:47 GMT
+2 &lt; content-type: application/json
+2 &lt; cache-control: no-store
+2 &lt; x-request-id: badd6e7b-abb6-48b5-905d-b5d03ab0a820
+2 &lt; x-frame-options: SAMEORIGIN
+2 &lt; content-length: 1037
+2 &lt; vary: Origin
+2 &lt; x-envoy-upstream-service-time: 571
+2 &lt; content-security-policy: frame-ancestors none;
+2 &lt; strict-transport-security: max-age=31536000; includeSubDomains
+2 &lt; x-xss-protection: 1; mode=block
+2 &lt; x-content-type-options: nosniff
+2 &lt; referrer-policy: no-referrer
+2 &lt; x-download-options: noopen
+2 &lt; x-dns-prefetch-control: off
+2 &lt; permissions-policy: camera 'none';microphone 'none';geolocation 'none';encrypted-media 'none';payment 'none';speaker 'none';usb 'none';
+{&quot;id&quot;: 2615, &quot;app_type&quot;: &quot;VIDEOCONF&quot;, &quot;app_name&quot;: &quot;conf7861&quot;, &quot;email&quot;: &quot;calelit252@weepm.com&quot;, &quot;subdomain_name&quot;: &quot;sahil-conf7861.qa-app.100ms.live&quot;, &quot;logo&quot;: null, &quot;color&quot;: &quot;#2F80FF&quot;, &quot;font&quot;: &quot;INTER&quot;, &quot;tile_shape&quot;: &quot;SQUARE&quot;, &quot;theme&quot;: &quot;DARK&quot;, &quot;video_off_avatars&quot;: &quot;NONE&quot;, &quot;chat&quot;: true, &quot;screenshare&quot;: true, &quot;annotation&quot;: true, &quot;background&quot;: true, &quot;spotlight&quot;: true, &quot;raise_hand&quot;: true, &quot;google_drive&quot;: true, &quot;youtube&quot;: true, &quot;whiteboard&quot;: true, &quot;policy&quot;: &quot;conf7861_videoconf_620b575e-1745-420f-82e4-367a3a9c52ce&quot;, &quot;policy_id&quot;: &quot;62c7ebad229354d45013d9b0&quot;, &quot;metadata&quot;: &quot;&quot;, &quot;starter_kit_id&quot;: 6, &quot;ts_template_id&quot;: 10, &quot;icon_url&quot;: null, &quot;user_name&quot;: &quot;confrence&quot;, &quot;success&quot;: true, &quot;recording_url&quot;: null, &quot;room_id&quot;: &quot;62c7ebadec1209a809f7dddc&quot;, &quot;role&quot;: [&quot;guest&quot;, &quot;host&quot;], &quot;room_links&quot;: {&quot;guest&quot;: {&quot;identifier&quot;: &quot;vzz-gis-etw&quot;, &quot;is_active&quot;: true, &quot;subdomain&quot;: &quot;sahil-conf7861.qa-app.100ms.live&quot;}, &quot;host&quot;: {&quot;identifier&quot;: &quot;wzv-ysl-fgc&quot;, &quot;is_active&quot;: true, &quot;subdomain&quot;: &quot;sahil-conf7861.qa-app.100ms.live&quot;}}, &quot;same_user&quot;: true, &quot;api_version&quot;: &quot;2.0.181&quot;}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-11">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-11" class="collapse collapsable-details">
+        <pre>08:32:47.716 [print] {
+  &quot;id&quot;: 2615,
+  &quot;app_type&quot;: &quot;VIDEOCONF&quot;,
+  &quot;app_name&quot;: &quot;conf7861&quot;,
+  &quot;email&quot;: &quot;calelit252@weepm.com&quot;,
+  &quot;subdomain_name&quot;: &quot;sahil-conf7861.qa-app.100ms.live&quot;,
+  &quot;logo&quot;: null,
+  &quot;color&quot;: &quot;#2F80FF&quot;,
+  &quot;font&quot;: &quot;INTER&quot;,
+  &quot;tile_shape&quot;: &quot;SQUARE&quot;,
+  &quot;theme&quot;: &quot;DARK&quot;,
+  &quot;video_off_avatars&quot;: &quot;NONE&quot;,
+  &quot;chat&quot;: true,
+  &quot;screenshare&quot;: true,
+  &quot;annotation&quot;: true,
+  &quot;background&quot;: true,
+  &quot;spotlight&quot;: true,
+  &quot;raise_hand&quot;: true,
+  &quot;google_drive&quot;: true,
+  &quot;youtube&quot;: true,
+  &quot;whiteboard&quot;: true,
+  &quot;policy&quot;: &quot;conf7861_videoconf_620b575e-1745-420f-82e4-367a3a9c52ce&quot;,
+  &quot;policy_id&quot;: &quot;62c7ebad229354d45013d9b0&quot;,
+  &quot;metadata&quot;: &quot;&quot;,
+  &quot;starter_kit_id&quot;: 6,
+  &quot;ts_template_id&quot;: 10,
+  &quot;icon_url&quot;: null,
+  &quot;user_name&quot;: &quot;confrence&quot;,
+  &quot;success&quot;: true,
+  &quot;recording_url&quot;: null,
+  &quot;room_id&quot;: &quot;62c7ebadec1209a809f7dddc&quot;,
+  &quot;role&quot;: [
+    &quot;guest&quot;,
+    &quot;host&quot;
+  ],
+  &quot;room_links&quot;: {
+    &quot;guest&quot;: {
+      &quot;identifier&quot;: &quot;vzz-gis-etw&quot;,
+      &quot;is_active&quot;: true,
+      &quot;subdomain&quot;: &quot;sahil-conf7861.qa-app.100ms.live&quot;
+    },
+    &quot;host&quot;: {
+      &quot;identifier&quot;: &quot;wzv-ysl-fgc&quot;,
+      &quot;is_active&quot;: true,
+      &quot;subdomain&quot;: &quot;sahil-conf7861.qa-app.100ms.live&quot;
+    }
+  },
+  &quot;same_user&quot;: true,
+  &quot;api_version&quot;: &quot;2.0.181&quot;
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
