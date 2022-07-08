@@ -23,6 +23,8 @@ jobs:
       
     - name: Build with Maven
       run: mvn test -Dtest=TestsRunner
+     -name: rename file
+      run: cd target/cucumber-html-reports && mv overview-features.html index.html
       
     - name: Deploy Pages
       uses: JamesIves/github-pages-deploy-action@4.1.5
