@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("47354065-db4c-4f10-a4ae-60003b743b17",{name:"sahilkashyap"});
+    posthog.capture("report_feature",{karate_version:"1.2.0",karate_meta:null});
+  }
+});
+</script>
+  
+    <title>endpoints.apps.get-all-apps</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-07-05 08:35:13 pm</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:8]"><span>[1:8]</span> <span>get all users and then get the first user by id</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">endpoints/apps/get-all-apps.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">get app tests</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:8]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:8]</span>
+                <span class="scenario-name">get all users and then get the first user by id</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2103</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:8]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://qa-in2.100ms.live/hmsapi&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">17</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">20:35:10.869 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def tokengenerator = Java.type(&#39;utils.TokenGenerator&#39;);</span>
+      </div>
+    </div>
+    <div class="time-cell passed">23</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def token = tokengenerator.getToken();</span>
+      </div>
+    </div>
+    <div class="time-cell passed">13</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/all-apps&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header authorization = token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">11</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2029</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.11">20:35:11.382 request:
+1 &gt; GET https://qa-in2.100ms.live/hmsapi/all-apps
+1 &gt; authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2ZXJzaW9uIjoyLCJ0eXBlIjoibWFuYWdlbWVudCIsImFwcF9kYXRhIjpudWxsLCJhY2Nlc3Nfa2V5IjoiNjI4MjJkYjAwNWM2NDg3ZjllNTU2NDU2IiwiZXhwIjoxNjU3MDM0MTE5LCJqdGkiOiI4ZTg4NTRlNS0wYjdkLTQ5ODctYTM1MC01NDExYjk1ZGNhZTMiLCJpYXQiOjE2NTY5OTgxMTksImlzcyI6IjYyODIyZGFmMDVjNjQ4N2Y5ZTU1NjQ1MiIsIm5iZiI6MTY1Njk5ODExOSwic3ViIjoiYXBpIn0.iNsdZ5lRbXHnSxAK4ZJfrXLX8beDVd-WeBv6tjCndPQ
+1 &gt; Host: qa-in2.100ms.live
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.1.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:35:13.060 response time in milliseconds: 1674
+1 &lt; 200
+1 &lt; server: istio-envoy
+1 &lt; date: Tue, 05 Jul 2022 15:05:13 GMT
+1 &lt; content-type: application/json
+1 &lt; cache-control: no-store
+1 &lt; x-request-id: 375a488f-c89a-4d9c-ac93-c77e531806d1
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; content-length: 4612
+1 &lt; vary: Origin
+1 &lt; x-envoy-upstream-service-time: 962
+1 &lt; content-security-policy: frame-ancestors none;
+1 &lt; strict-transport-security: max-age=31536000; includeSubDomains
+1 &lt; x-xss-protection: 1; mode=block
+1 &lt; x-content-type-options: nosniff
+1 &lt; referrer-policy: no-referrer
+1 &lt; x-download-options: noopen
+1 &lt; x-dns-prefetch-control: off
+1 &lt; permissions-policy: camera &#39;none&#39;;microphone &#39;none&#39;;geolocation &#39;none&#39;;encrypted-media &#39;none&#39;;payment &#39;none&#39;;speaker &#39;none&#39;;usb &#39;none&#39;;
+{&quot;user_name&quot;: &quot;sahil&quot;, &quot;apps&quot;: [{&quot;id&quot;: 2596, &quot;app_type&quot;: &quot;AUDIOROOM&quot;, &quot;app_name&quot;: &quot;sahil-100mscjn&quot;, &quot;subdomain_name&quot;: &quot;sahil-100mscjn.qa-app.100ms.live&quot;, &quot;room_id&quot;: &quot;hgh-nbp-vtd&quot;, &quot;logo&quot;: &quot;https://100ms.live/images/100ms-logo.png&quot;, &quot;color&quot;: &quot;#2F80FF&quot;, &quot;font&quot;: &quot;INTER&quot;, &quot;tile_shape&quot;: &quot;SQUARE&quot;, &quot;theme&quot;: &quot;DARK&quot;, &quot;video_off_avatars&quot;: &quot;NONE&quot;, &quot;chat&quot;: true, &quot;screenshare&quot;: true, &quot;annotation&quot;: true, &quot;background&quot;: true, &quot;spotlight&quot;: true, &quot;raise_hand&quot;: true, &quot;google_drive&quot;: true, &quot;youtube&quot;: true, &quot;whiteboard&quot;: true, &quot;policy&quot;: &quot;sahil-100mscjn_audioroom_07f767e4-0582-4083-96de-ea83af7affcf&quot;, &quot;policy_id&quot;: &quot;62c2ae73e0373c994faad924&quot;, &quot;room_links&quot;: {&quot;listener&quot;: {&quot;identifier&quot;: &quot;xym-kja-ksx&quot;, &quot;is_active&quot;: true, &quot;subdomain&quot;: &quot;sahil-100mscjn.qa-app.100ms.live&quot;}, &quot;moderator&quot;: {&quot;identifier&quot;: &quot;ecj-dia-jek&quot;, &quot;is_active&quot;: true, &quot;subdomain&quot;: &quot;sahil-100mscjn.qa-app.100ms.live&quot;}, &quot;speaker&quot;: {&quot;identifier&quot;: &quot;hgh-nbp-vtd&quot;, &quot;is_active&quot;: true, &quot;subdomain&quot;: &quot;sahil-100mscjn.qa-app.100ms.live&quot;}}, &quot;metadata&quot;: &quot;&quot;, &quot;default&quot;: false, &quot;starter_kit_id&quot;: 2, &quot;ts_template_id&quot;: 7, &quot;deployment_url&quot;: &quot;audio-room-starter-kittt-4seekh8x5-sahil-100ms.vercel.app&quot;, &quot;icon_url&quot;: null, &quot;user_name&quot;: &quot;sahil&quot;}, {&quot;id&quot;: 2594, &quot;app_type&quot;: &quot;CREATEOWN&quot;, &quot;app_name&quot;: &quot;custom&quot;, &quot;subdomain_name&quot;: &quot;sahil-custom.qa-app.100ms.live&quot;, &quot;room_id&quot;: &quot;ptt-yef-xgg&quot;, &quot;logo&quot;: &quot;https://100ms.live/images/100ms-logo.png&quot;, &quot;color&quot;: &quot;#2F80FF&quot;, &quot;font&quot;: &quot;INTER&quot;, &quot;tile_shape&quot;: &quot;SQUARE&quot;, &quot;theme&quot;: &quot;DARK&quot;, &quot;video_off_avatars&quot;: &quot;NONE&quot;, &quot;chat&quot;: true, &quot;screenshare&quot;: true, &quot;annotation&quot;: true, &quot;background&quot;: true, &quot;spotlight&quot;: true, &quot;raise_hand&quot;: true, &quot;google_drive&quot;: true, &quot;youtube&quot;: true, &quot;whiteboard&quot;: true, &quot;policy&quot;: &quot;custom_createown_aae6db96-b621-4ebe-a58c-0dd9db68f16a&quot;, &quot;policy_id&quot;: &quot;62c28c0bfb8c59de333c67bb&quot;, &quot;room_links&quot;: {&quot;new-role&quot;: {&quot;identifier&quot;: &quot;rks-fmj-nmo&quot;, &quot;is_active&quot;: true, &quot;subdomain&quot;: &quot;sahil-custom.qa-app.100ms.live&quot;}, &quot;new-role-6659&quot;: {&quot;identifier&quot;: &quot;ptt-yef-xgg&quot;, &quot;is_active&quot;: true, &quot;subdomain&quot;: &quot;sahil-custom.qa-app.100ms.live&quot;}}, &quot;metadata&quot;: &quot;&quot;, &quot;default&quot;: false, &quot;starter_kit_id&quot;: null, &quot;ts_template_id&quot;: null, &quot;deployment_url&quot;: null, &quot;icon_url&quot;: null, &quot;user_name&quot;: &quot;sahil&quot;}, {&quot;id&quot;: 2593, &quot;app_type&quot;: &quot;LIVE_STREAM&quot;, &quot;app_name&quot;: &quot;streaming&quot;, &quot;subdomain_name&quot;: &quot;sahil-streaming.qa-app.100ms.live&quot;, &quot;room_id&quot;: &quot;xce-qlj-lir&quot;, &quot;logo&quot;: &quot;https://100ms.live/images/100ms-logo.png&quot;, &quot;color&quot;: &quot;#2F80FF&quot;, &quot;font&quot;: &quot;INTER&quot;, &quot;tile_shape&quot;: &quot;SQUARE&quot;, &quot;theme&quot;: &quot;DARK&quot;, &quot;video_off_avatars&quot;: &quot;NONE&quot;, &quot;chat&quot;: true, &quot;screenshare&quot;: true, &quot;annotation&quot;: true, &quot;background&quot;: true, &quot;spotlight&quot;: true, &quot;raise_hand&quot;: true, &quot;google_drive&quot;: true, &quot;youtube&quot;: true, &quot;whiteboard&quot;: true, &quot;policy&quot;: &quot;streaming_live_stream_58c2d1ca-c1dd-4038-baf0-a6ddfd3b692d&quot;, &quot;policy_id&quot;: &quot;62c28b0dfb8c59de333c67ba&quot;, &quot;room_links&quot;: {&quot;__internal_recorder&quot;: {&quot;identifier&quot;: &quot;vrw-cjw-fvr&quot;, &quot;is_active&quot;: true, &quot;subdomain&quot;: &quot;sahil-streaming.qa-app.100ms.live&quot;}, &quot;broadcaster&quot;: {&quot;identifier&quot;: &quot;wuy-owf-hej&quot;, &quot;is_active&quot;: true, &quot;subdomain&quot;: &quot;sahil-streaming.qa-app.100ms.live&quot;}, &quot;hls-viewer&quot;: {&quot;identifier&quot;: &quot;xce-qlj-lir&quot;, &quot;is_active&quot;: true, &quot;subdomain&quot;: &quot;sahil-streaming.qa-app.100ms.live&quot;}}, &quot;metadata&quot;: &quot;&quot;, &quot;default&quot;: false, &quot;starter_kit_id&quot;: 8, &quot;ts_template_id&quot;: 11, &quot;deployment_url&quot;: null, &quot;icon_url&quot;: null, &quot;user_name&quot;: &quot;sahil&quot;}, {&quot;id&quot;: 2592, &quot;app_type&quot;: &quot;VIDEOCONF&quot;, &quot;app_name&quot;: &quot;conf&quot;, &quot;subdomain_name&quot;: &quot;sahil-conf.qa-app.100ms.live&quot;, &quot;room_id&quot;: &quot;onu-zim-lup&quot;, &quot;logo&quot;: &quot;https://100ms.live/images/100ms-logo.png&quot;, &quot;color&quot;: &quot;#2F80FF&quot;, &quot;font&quot;: &quot;INTER&quot;, &quot;tile_shape&quot;: &quot;1-1&quot;, &quot;theme&quot;: &quot;DARK&quot;, &quot;video_off_avatars&quot;: &quot;NONE&quot;, &quot;chat&quot;: true, &quot;screenshare&quot;: true, &quot;annotation&quot;: true, &quot;background&quot;: true, &quot;spotlight&quot;: true, &quot;raise_hand&quot;: true, &quot;google_drive&quot;: true, &quot;youtube&quot;: true, &quot;whiteboard&quot;: true, &quot;policy&quot;: &quot;conf_videoconf_89f60ec2-fc60-4471-bffc-13c67284a3b5&quot;, &quot;policy_id&quot;: &quot;62c28a94e0373c994faad923&quot;, &quot;room_links&quot;: {&quot;__internal_recorder&quot;: {&quot;identifier&quot;: &quot;kbr-mqu-hud&quot;, &quot;is_active&quot;: true, &quot;subdomain&quot;: &quot;sahil-conf.qa-app.100ms.live&quot;}, &quot;guest&quot;: {&quot;identifier&quot;: &quot;myp-tvc-vyc&quot;, &quot;is_active&quot;: true, &quot;subdomain&quot;: &quot;sahil-conf.qa-app.100ms.live&quot;}, &quot;hls-viewer&quot;: {&quot;identifier&quot;: &quot;hvs-euq-ajr&quot;, &quot;is_active&quot;: true, &quot;subdomain&quot;: &quot;sahil-conf.qa-app.100ms.live&quot;}, &quot;host&quot;: {&quot;identifier&quot;: &quot;onu-zim-lup&quot;, &quot;is_active&quot;: true, &quot;subdomain&quot;: &quot;sahil-conf.qa-app.100ms.live&quot;}}, &quot;metadata&quot;: &quot;{\&quot;headlessConfig\&quot;:{\&quot;hideAudioLevel\&quot;:false,\&quot;hideTileAudioMute\&quot;:false,\&quot;hideTileName\&quot;:true,\&quot;tileOffset\&quot;:0,\&quot;uiMode\&quot;:\&quot;grid\&quot;}}&quot;, &quot;default&quot;: false, &quot;starter_kit_id&quot;: 6, &quot;ts_template_id&quot;: 10, &quot;deployment_url&quot;: null, &quot;icon_url&quot;: null, &quot;user_name&quot;: &quot;sahil&quot;}], &quot;success&quot;: true, &quot;msg&quot;: &quot;apps fetched successfully&quot;, &quot;api_version&quot;: &quot;2.0.181&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">20:35:13.083 [print] {
+  &quot;user_name&quot;: &quot;sahil&quot;,
+  &quot;apps&quot;: [
+    {
+      &quot;id&quot;: 2596,
+      &quot;app_type&quot;: &quot;AUDIOROOM&quot;,
+      &quot;app_name&quot;: &quot;sahil-100mscjn&quot;,
+      &quot;subdomain_name&quot;: &quot;sahil-100mscjn.qa-app.100ms.live&quot;,
+      &quot;room_id&quot;: &quot;hgh-nbp-vtd&quot;,
+      &quot;logo&quot;: &quot;https://100ms.live/images/100ms-logo.png&quot;,
+      &quot;color&quot;: &quot;#2F80FF&quot;,
+      &quot;font&quot;: &quot;INTER&quot;,
+      &quot;tile_shape&quot;: &quot;SQUARE&quot;,
+      &quot;theme&quot;: &quot;DARK&quot;,
+      &quot;video_off_avatars&quot;: &quot;NONE&quot;,
+      &quot;chat&quot;: true,
+      &quot;screenshare&quot;: true,
+      &quot;annotation&quot;: true,
+      &quot;background&quot;: true,
+      &quot;spotlight&quot;: true,
+      &quot;raise_hand&quot;: true,
+      &quot;google_drive&quot;: true,
+      &quot;youtube&quot;: true,
+      &quot;whiteboard&quot;: true,
+      &quot;policy&quot;: &quot;sahil-100mscjn_audioroom_07f767e4-0582-4083-96de-ea83af7affcf&quot;,
+      &quot;policy_id&quot;: &quot;62c2ae73e0373c994faad924&quot;,
+      &quot;room_links&quot;: {
+        &quot;listener&quot;: {
+          &quot;identifier&quot;: &quot;xym-kja-ksx&quot;,
+          &quot;is_active&quot;: true,
+          &quot;subdomain&quot;: &quot;sahil-100mscjn.qa-app.100ms.live&quot;
+        },
+        &quot;moderator&quot;: {
+          &quot;identifier&quot;: &quot;ecj-dia-jek&quot;,
+          &quot;is_active&quot;: true,
+          &quot;subdomain&quot;: &quot;sahil-100mscjn.qa-app.100ms.live&quot;
+        },
+        &quot;speaker&quot;: {
+          &quot;identifier&quot;: &quot;hgh-nbp-vtd&quot;,
+          &quot;is_active&quot;: true,
+          &quot;subdomain&quot;: &quot;sahil-100mscjn.qa-app.100ms.live&quot;
+        }
+      },
+      &quot;metadata&quot;: &quot;&quot;,
+      &quot;default&quot;: false,
+      &quot;starter_kit_id&quot;: 2,
+      &quot;ts_template_id&quot;: 7,
+      &quot;deployment_url&quot;: &quot;audio-room-starter-kittt-4seekh8x5-sahil-100ms.vercel.app&quot;,
+      &quot;icon_url&quot;: null,
+      &quot;user_name&quot;: &quot;sahil&quot;
+    },
+    {
+      &quot;id&quot;: 2594,
+      &quot;app_type&quot;: &quot;CREATEOWN&quot;,
+      &quot;app_name&quot;: &quot;custom&quot;,
+      &quot;subdomain_name&quot;: &quot;sahil-custom.qa-app.100ms.live&quot;,
+      &quot;room_id&quot;: &quot;ptt-yef-xgg&quot;,
+      &quot;logo&quot;: &quot;https://100ms.live/images/100ms-logo.png&quot;,
+      &quot;color&quot;: &quot;#2F80FF&quot;,
+      &quot;font&quot;: &quot;INTER&quot;,
+      &quot;tile_shape&quot;: &quot;SQUARE&quot;,
+      &quot;theme&quot;: &quot;DARK&quot;,
+      &quot;video_off_avatars&quot;: &quot;NONE&quot;,
+      &quot;chat&quot;: true,
+      &quot;screenshare&quot;: true,
+      &quot;annotation&quot;: true,
+      &quot;background&quot;: true,
+      &quot;spotlight&quot;: true,
+      &quot;raise_hand&quot;: true,
+      &quot;google_drive&quot;: true,
+      &quot;youtube&quot;: true,
+      &quot;whiteboard&quot;: true,
+      &quot;policy&quot;: &quot;custom_createown_aae6db96-b621-4ebe-a58c-0dd9db68f16a&quot;,
+      &quot;policy_id&quot;: &quot;62c28c0bfb8c59de333c67bb&quot;,
+      &quot;room_links&quot;: {
+        &quot;new-role&quot;: {
+          &quot;identifier&quot;: &quot;rks-fmj-nmo&quot;,
+          &quot;is_active&quot;: true,
+          &quot;subdomain&quot;: &quot;sahil-custom.qa-app.100ms.live&quot;
+        },
+        &quot;new-role-6659&quot;: {
+          &quot;identifier&quot;: &quot;ptt-yef-xgg&quot;,
+          &quot;is_active&quot;: true,
+          &quot;subdomain&quot;: &quot;sahil-custom.qa-app.100ms.live&quot;
+        }
+      },
+      &quot;metadata&quot;: &quot;&quot;,
+      &quot;default&quot;: false,
+      &quot;starter_kit_id&quot;: null,
+      &quot;ts_template_id&quot;: null,
+      &quot;deployment_url&quot;: null,
+      &quot;icon_url&quot;: null,
+      &quot;user_name&quot;: &quot;sahil&quot;
+    },
+    {
+      &quot;id&quot;: 2593,
+      &quot;app_type&quot;: &quot;LIVE_STREAM&quot;,
+      &quot;app_name&quot;: &quot;streaming&quot;,
+      &quot;subdomain_name&quot;: &quot;sahil-streaming.qa-app.100ms.live&quot;,
+      &quot;room_id&quot;: &quot;xce-qlj-lir&quot;,
+      &quot;logo&quot;: &quot;https://100ms.live/images/100ms-logo.png&quot;,
+      &quot;color&quot;: &quot;#2F80FF&quot;,
+      &quot;font&quot;: &quot;INTER&quot;,
+      &quot;tile_shape&quot;: &quot;SQUARE&quot;,
+      &quot;theme&quot;: &quot;DARK&quot;,
+      &quot;video_off_avatars&quot;: &quot;NONE&quot;,
+      &quot;chat&quot;: true,
+      &quot;screenshare&quot;: true,
+      &quot;annotation&quot;: true,
+      &quot;background&quot;: true,
+      &quot;spotlight&quot;: true,
+      &quot;raise_hand&quot;: true,
+      &quot;google_drive&quot;: true,
+      &quot;youtube&quot;: true,
+      &quot;whiteboard&quot;: true,
+      &quot;policy&quot;: &quot;streaming_live_stream_58c2d1ca-c1dd-4038-baf0-a6ddfd3b692d&quot;,
+      &quot;policy_id&quot;: &quot;62c28b0dfb8c59de333c67ba&quot;,
+      &quot;room_links&quot;: {
+        &quot;__internal_recorder&quot;: {
+          &quot;identifier&quot;: &quot;vrw-cjw-fvr&quot;,
+          &quot;is_active&quot;: true,
+          &quot;subdomain&quot;: &quot;sahil-streaming.qa-app.100ms.live&quot;
+        },
+        &quot;broadcaster&quot;: {
+          &quot;identifier&quot;: &quot;wuy-owf-hej&quot;,
+          &quot;is_active&quot;: true,
+          &quot;subdomain&quot;: &quot;sahil-streaming.qa-app.100ms.live&quot;
+        },
+        &quot;hls-viewer&quot;: {
+          &quot;identifier&quot;: &quot;xce-qlj-lir&quot;,
+          &quot;is_active&quot;: true,
+          &quot;subdomain&quot;: &quot;sahil-streaming.qa-app.100ms.live&quot;
+        }
+      },
+      &quot;metadata&quot;: &quot;&quot;,
+      &quot;default&quot;: false,
+      &quot;starter_kit_id&quot;: 8,
+      &quot;ts_template_id&quot;: 11,
+      &quot;deployment_url&quot;: null,
+      &quot;icon_url&quot;: null,
+      &quot;user_name&quot;: &quot;sahil&quot;
+    },
+    {
+      &quot;id&quot;: 2592,
+      &quot;app_type&quot;: &quot;VIDEOCONF&quot;,
+      &quot;app_name&quot;: &quot;conf&quot;,
+      &quot;subdomain_name&quot;: &quot;sahil-conf.qa-app.100ms.live&quot;,
+      &quot;room_id&quot;: &quot;onu-zim-lup&quot;,
+      &quot;logo&quot;: &quot;https://100ms.live/images/100ms-logo.png&quot;,
+      &quot;color&quot;: &quot;#2F80FF&quot;,
+      &quot;font&quot;: &quot;INTER&quot;,
+      &quot;tile_shape&quot;: &quot;1-1&quot;,
+      &quot;theme&quot;: &quot;DARK&quot;,
+      &quot;video_off_avatars&quot;: &quot;NONE&quot;,
+      &quot;chat&quot;: true,
+      &quot;screenshare&quot;: true,
+      &quot;annotation&quot;: true,
+      &quot;background&quot;: true,
+      &quot;spotlight&quot;: true,
+      &quot;raise_hand&quot;: true,
+      &quot;google_drive&quot;: true,
+      &quot;youtube&quot;: true,
+      &quot;whiteboard&quot;: true,
+      &quot;policy&quot;: &quot;conf_videoconf_89f60ec2-fc60-4471-bffc-13c67284a3b5&quot;,
+      &quot;policy_id&quot;: &quot;62c28a94e0373c994faad923&quot;,
+      &quot;room_links&quot;: {
+        &quot;__internal_recorder&quot;: {
+          &quot;identifier&quot;: &quot;kbr-mqu-hud&quot;,
+          &quot;is_active&quot;: true,
+          &quot;subdomain&quot;: &quot;sahil-conf.qa-app.100ms.live&quot;
+        },
+        &quot;guest&quot;: {
+          &quot;identifier&quot;: &quot;myp-tvc-vyc&quot;,
+          &quot;is_active&quot;: true,
+          &quot;subdomain&quot;: &quot;sahil-conf.qa-app.100ms.live&quot;
+        },
+        &quot;hls-viewer&quot;: {
+          &quot;identifier&quot;: &quot;hvs-euq-ajr&quot;,
+          &quot;is_active&quot;: true,
+          &quot;subdomain&quot;: &quot;sahil-conf.qa-app.100ms.live&quot;
+        },
+        &quot;host&quot;: {
+          &quot;identifier&quot;: &quot;onu-zim-lup&quot;,
+          &quot;is_active&quot;: true,
+          &quot;subdomain&quot;: &quot;sahil-conf.qa-app.100ms.live&quot;
+        }
+      },
+      &quot;metadata&quot;: &quot;{\&quot;headlessConfig\&quot;:{\&quot;hideAudioLevel\&quot;:false,\&quot;hideTileAudioMute\&quot;:false,\&quot;hideTileName\&quot;:true,\&quot;tileOffset\&quot;:0,\&quot;uiMode\&quot;:\&quot;grid\&quot;}}&quot;,
+      &quot;default&quot;: false,
+      &quot;starter_kit_id&quot;: 6,
+      &quot;ts_template_id&quot;: 10,
+      &quot;deployment_url&quot;: null,
+      &quot;icon_url&quot;: null,
+      &quot;user_name&quot;: &quot;sahil&quot;
+    }
+  ],
+  &quot;success&quot;: true,
+  &quot;msg&quot;: &quot;apps fetched successfully&quot;,
+  &quot;api_version&quot;: &quot;2.0.181&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

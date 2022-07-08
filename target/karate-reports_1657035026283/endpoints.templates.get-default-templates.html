@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("47354065-db4c-4f10-a4ae-60003b743b17",{name:"sahilkashyap"});
+    posthog.capture("report_feature",{karate_version:"1.2.0",karate_meta:null});
+  }
+});
+</script>
+  
+    <title>endpoints.templates.get-default-templates</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-07-05 08:35:14 pm</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:7]"><span>[1:7]</span> <span>get all users and then get the first user by id</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">endpoints/templates/get-default-templates.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">get templates tests</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:7]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:7]</span>
+                <span class="scenario-name">get all users and then get the first user by id</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>212</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:7]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:7]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.3">
+      <div class="step-ref bg-step">3</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://qa-in2.100ms.live/hmsapi&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.3">20:35:12.279 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:7]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def tokengenerator = Java.type(&#39;utils.TokenGenerator&#39;);</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:7]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def token = tokengenerator.getToken();</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/roles/default-templates&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header authorization = &#39;Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2ZXJzaW9uIjoyLCJ0eXBlIjoibWFuYWdlbWVudCIsImFwcF9kYXRhIjpudWxsLCJhY2Nlc3Nfa2V5IjoiNjI4MjJkYjAwNWM2NDg3ZjllNTU2NDU2IiwiZXhwIjoxNjU3MDM0MTE5LCJqdGkiOiI4ZTg4NTRlNS0wYjdkLTQ5ODctYTM1MC01NDExYjk1ZGNhZTMiLCJpYXQiOjE2NTY5OTgxMTksImlzcyI6IjYyODIyZGFmMDVjNjQ4N2Y5ZTU1NjQ1MiIsIm5iZiI6MTY1Njk5ODExOSwic3ViIjoiYXBpIn0.iNsdZ5lRbXHnSxAK4ZJfrXLX8beDVd-WeBv6tjCndPQ&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">185</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">20:35:12.308 request:
+1 &gt; GET https://qa-in2.100ms.live/hmsapi/roles/default-templates
+1 &gt; authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2ZXJzaW9uIjoyLCJ0eXBlIjoibWFuYWdlbWVudCIsImFwcF9kYXRhIjpudWxsLCJhY2Nlc3Nfa2V5IjoiNjI4MjJkYjAwNWM2NDg3ZjllNTU2NDU2IiwiZXhwIjoxNjU3MDM0MTE5LCJqdGkiOiI4ZTg4NTRlNS0wYjdkLTQ5ODctYTM1MC01NDExYjk1ZGNhZTMiLCJpYXQiOjE2NTY5OTgxMTksImlzcyI6IjYyODIyZGFmMDVjNjQ4N2Y5ZTU1NjQ1MiIsIm5iZiI6MTY1Njk5ODExOSwic3ViIjoiYXBpIn0.iNsdZ5lRbXHnSxAK4ZJfrXLX8beDVd-WeBv6tjCndPQ
+1 &gt; Host: qa-in2.100ms.live
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.1.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:35:12.480 response time in milliseconds: 172
+1 &lt; 200
+1 &lt; server: istio-envoy
+1 &lt; date: Tue, 05 Jul 2022 15:05:12 GMT
+1 &lt; content-type: application/json
+1 &lt; cache-control: no-store
+1 &lt; x-request-id: a0a40081-3562-41a9-8d51-ad9a4626f8ae
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; content-length: 10581
+1 &lt; vary: Origin
+1 &lt; x-envoy-upstream-service-time: 8
+1 &lt; content-security-policy: frame-ancestors none;
+1 &lt; strict-transport-security: max-age=31536000; includeSubDomains
+1 &lt; x-xss-protection: 1; mode=block
+1 &lt; x-content-type-options: nosniff
+1 &lt; referrer-policy: no-referrer
+1 &lt; x-download-options: noopen
+1 &lt; x-dns-prefetch-control: off
+1 &lt; permissions-policy: camera &#39;none&#39;;microphone &#39;none&#39;;geolocation &#39;none&#39;;encrypted-media &#39;none&#39;;payment &#39;none&#39;;speaker &#39;none&#39;;usb &#39;none&#39;;
+{&quot;templates&quot;: [{&quot;type&quot;: &quot;EDTECH&quot;, &quot;name&quot;: &quot;Online Classroom&quot;, &quot;image&quot;: &quot;app-builder-edtech.svg&quot;}, {&quot;type&quot;: &quot;AUDIOROOM&quot;, &quot;name&quot;: &quot;Audio Rooms&quot;, &quot;image&quot;: &quot;app-builder-audio-room.svg&quot;}, {&quot;type&quot;: &quot;VIDEOCONF&quot;, &quot;name&quot;: &quot;Video Conferencing&quot;, &quot;image&quot;: &quot;app-builder-video-conf.svg&quot;}, {&quot;type&quot;: &quot;EVENTAPP&quot;, &quot;name&quot;: &quot;Virtual Events&quot;, &quot;image&quot;: &quot;app-builder-event-app.svg&quot;}, {&quot;type&quot;: &quot;CREATEOWN&quot;, &quot;name&quot;: &quot;Create your Own&quot;, &quot;image&quot;: &quot;app-builder-create-own.svg&quot;}], &quot;roles&quot;: {&quot;EDTECH&quot;: [{&quot;role&quot;: &quot;teacher&quot;, &quot;name&quot;: &quot;Teacher&quot;, &quot;description&quot;: &quot;Teachers&#39; videos are always shown in a presenter mode to all students.&quot;, &quot;permissions&quot;: {&quot;endRoom&quot;: true, &quot;changeRole&quot;: true, &quot;mute&quot;: true, &quot;unmute&quot;: true, &quot;removeOthers&quot;: true, &quot;startRecording&quot;: true, &quot;remove&quot;: [&quot;student&quot;]}, &quot;subscribeDegradation&quot;: true, &quot;chat&quot;: {&quot;privateMessage&quot;: [&quot;student&quot;]}, &quot;screenshare&quot;: {&quot;permissions&quot;: [&quot;Start&quot;, &quot;Invite&quot;, &quot;Collaborate&quot;]}, &quot;video_quality&quot;: &quot;_360p&quot;, &quot;screenshare_quality&quot;: &quot;_1080p&quot;, &quot;annotation&quot;: {&quot;permissions&quot;: []}, &quot;virtualBackgrounds&quot;: {&quot;set&quot;: true, &quot;upload&quot;: false}, &quot;spotlight&quot;: {&quot;permissions&quot;: []}, &quot;raiseHand&quot;: {&quot;raiseOwn&quot;: false, &quot;lowerOthers&quot;: true}, &quot;googleDrive&quot;: {&quot;permissions&quot;: []}, &quot;youtube&quot;: {&quot;permissions&quot;: []}, &quot;advancedSettings&quot;: {&quot;publish&quot;: {&quot;audio&quot;: true, &quot;video&quot;: true, &quot;poorNetworkTurnOffVideo&quot;: true, &quot;screenshare&quot;: true}, &quot;subscribe&quot;: {&quot;to&quot;: [&quot;student&quot;, &quot;teacher&quot;], &quot;maxVideoTiles&quot;: 20, &quot;screenshare&quot;: true, &quot;audio&quot;: [], &quot;video&quot;: [], &quot;poorNetworkTurnOffVideo&quot;: []}}, &quot;default&quot;: true}, {&quot;role&quot;: &quot;student&quot;, &quot;name&quot;: &quot;Student&quot;, &quot;description&quot;: &quot;Students can see other students and also engage with teachers through various features.&quot;, &quot;permissions&quot;: {&quot;endRoom&quot;: false, &quot;changeRole&quot;: false, &quot;mute&quot;: false, &quot;unmute&quot;: false, &quot;removeOthers&quot;: false, &quot;startRecording&quot;: true, &quot;remove&quot;: []}, &quot;subscribeDegradation&quot;: true, &quot;chat&quot;: {&quot;privateMessage&quot;: []}, &quot;screenshare&quot;: {&quot;permissions&quot;: []}, &quot;video_quality&quot;: &quot;_360p&quot;, &quot;screenshare_quality&quot;: &quot;_1080p&quot;, &quot;annotation&quot;: {&quot;permissions&quot;: []}, &quot;virtualBackgrounds&quot;: {&quot;set&quot;: true, &quot;upload&quot;: false}, &quot;spotlight&quot;: {&quot;permissions&quot;: []}, &quot;raiseHand&quot;: {&quot;raiseOwn&quot;: false, &quot;lowerOthers&quot;: true}, &quot;googleDrive&quot;: {&quot;permissions&quot;: []}, &quot;youtube&quot;: {&quot;permissions&quot;: []}, &quot;advancedSettings&quot;: {&quot;publish&quot;: {&quot;audio&quot;: true, &quot;video&quot;: true, &quot;poorNetworkTurnOffVideo&quot;: true, &quot;screenshare&quot;: false}, &quot;subscribe&quot;: {&quot;to&quot;: [&quot;teacher&quot;, &quot;student&quot;], &quot;maxVideoTiles&quot;: 20, &quot;screenshare&quot;: true, &quot;audio&quot;: [], &quot;video&quot;: [], &quot;poorNetworkTurnOffVideo&quot;: []}}, &quot;default&quot;: true}], &quot;AUDIOROOM&quot;: [{&quot;role&quot;: &quot;listener&quot;, &quot;name&quot;: &quot;Listener&quot;, &quot;description&quot;: &quot;Can only listen to what speaker is saying. They can\u2019t see other listeners.&quot;, &quot;permissions&quot;: {&quot;endRoom&quot;: false, &quot;changeRole&quot;: false, &quot;mute&quot;: false, &quot;unmute&quot;: false, &quot;removeOthers&quot;: false, &quot;startRecording&quot;: false, &quot;remove&quot;: []}, &quot;subscribeDegradation&quot;: true, &quot;chat&quot;: {&quot;privateMessage&quot;: []}, &quot;screenshare&quot;: {&quot;permissions&quot;: []}, &quot;video_quality&quot;: &quot;_360p&quot;, &quot;screenshare_quality&quot;: &quot;_1080p&quot;, &quot;annotation&quot;: {&quot;permissions&quot;: []}, &quot;virtualBackgrounds&quot;: {&quot;set&quot;: false, &quot;upload&quot;: false}, &quot;spotlight&quot;: {&quot;permissions&quot;: []}, &quot;raiseHand&quot;: {&quot;raiseOwn&quot;: true, &quot;lowerOthers&quot;: false}, &quot;googleDrive&quot;: {&quot;permissions&quot;: []}, &quot;youtube&quot;: {&quot;permissions&quot;: []}, &quot;advancedSettings&quot;: {&quot;publish&quot;: {&quot;audio&quot;: false, &quot;video&quot;: false, &quot;poorNetworkTurnOffVideo&quot;: true, &quot;screenshare&quot;: false}, &quot;subscribe&quot;: {&quot;to&quot;: [&quot;speaker&quot;, &quot;moderator&quot;], &quot;maxVideoTiles&quot;: 20, &quot;screenshare&quot;: false, &quot;audio&quot;: [], &quot;video&quot;: [], &quot;poorNetworkTurnOffVideo&quot;: []}}, &quot;default&quot;: true}, {&quot;role&quot;: &quot;speaker&quot;, &quot;name&quot;: &quot;Speaker&quot;, &quot;description&quot;: &quot;Audio only participant can speak their heart out without having to share video.&quot;, &quot;permissions&quot;: {&quot;endRoom&quot;: true, &quot;changeRole&quot;: false, &quot;mute&quot;: true, &quot;unmute&quot;: true, &quot;removeOthers&quot;: false, &quot;startRecording&quot;: true, &quot;remove&quot;: []}, &quot;subscribeDegradation&quot;: true, &quot;chat&quot;: {&quot;privateMessage&quot;: []}, &quot;screenshare&quot;: {&quot;permissions&quot;: []}, &quot;video_quality&quot;: &quot;_360p&quot;, &quot;screenshare_quality&quot;: &quot;_1080p&quot;, &quot;annotation&quot;: {&quot;permissions&quot;: []}, &quot;virtualBackgrounds&quot;: {&quot;set&quot;: false, &quot;upload&quot;: false}, &quot;spotlight&quot;: {&quot;permissions&quot;: []}, &quot;raiseHand&quot;: {&quot;raiseOwn&quot;: true, &quot;lowerOthers&quot;: true}, &quot;googleDrive&quot;: {&quot;permissions&quot;: []}, &quot;youtube&quot;: {&quot;permissions&quot;: []}, &quot;advancedSettings&quot;: {&quot;publish&quot;: {&quot;audio&quot;: true, &quot;video&quot;: false, &quot;poorNetworkTurnOffVideo&quot;: false, &quot;screenshare&quot;: false}, &quot;subscribe&quot;: {&quot;to&quot;: [&quot;speaker&quot;, &quot;moderator&quot;], &quot;maxVideoTiles&quot;: 20, &quot;screenshare&quot;: false, &quot;audio&quot;: [], &quot;video&quot;: [], &quot;poorNetworkTurnOffVideo&quot;: []}}, &quot;default&quot;: true}, {&quot;role&quot;: &quot;moderator&quot;, &quot;name&quot;: &quot;Moderator&quot;, &quot;description&quot;: &quot;Moderator is the role which controls and leads the discussion. This role can invite any listener to become a speaker.&quot;, &quot;permissions&quot;: {&quot;endRoom&quot;: true, &quot;changeRole&quot;: true, &quot;mute&quot;: true, &quot;unmute&quot;: true, &quot;removeOthers&quot;: true, &quot;startRecording&quot;: true, &quot;remove&quot;: []}, &quot;subscribeDegradation&quot;: true, &quot;chat&quot;: {&quot;privateMessage&quot;: []}, &quot;screenshare&quot;: {&quot;permissions&quot;: []}, &quot;video_quality&quot;: &quot;_360p&quot;, &quot;screenshare_quality&quot;: &quot;_1080p&quot;, &quot;annotation&quot;: {&quot;permissions&quot;: []}, &quot;virtualBackgrounds&quot;: {&quot;set&quot;: false, &quot;upload&quot;: false}, &quot;spotlight&quot;: {&quot;permissions&quot;: []}, &quot;raiseHand&quot;: {&quot;raiseOwn&quot;: true, &quot;lowerOthers&quot;: true}, &quot;googleDrive&quot;: {&quot;permissions&quot;: []}, &quot;youtube&quot;: {&quot;permissions&quot;: []}, &quot;advancedSettings&quot;: {&quot;publish&quot;: {&quot;audio&quot;: true, &quot;video&quot;: false, &quot;poorNetworkTurnOffVideo&quot;: false, &quot;screenshare&quot;: false}, &quot;subscribe&quot;: {&quot;to&quot;: [&quot;speaker&quot;, &quot;moderator&quot;], &quot;maxVideoTiles&quot;: 20, &quot;screenshare&quot;: false, &quot;audio&quot;: [], &quot;video&quot;: [], &quot;poorNetworkTurnOffVideo&quot;: []}}, &quot;default&quot;: true}], &quot;VIDEOCONF&quot;: [{&quot;role&quot;: &quot;host&quot;, &quot;name&quot;: &quot;Host&quot;, &quot;description&quot;: &quot;The maestro of your video conferencing application comes with superpowers like sharing their screen during a video call.&quot;, &quot;permissions&quot;: {&quot;endRoom&quot;: true, &quot;changeRole&quot;: true, &quot;mute&quot;: true, &quot;unmute&quot;: true, &quot;removeOthers&quot;: true, &quot;startRecording&quot;: true, &quot;remove&quot;: [&quot;guest&quot;]}, &quot;subscribeDegradation&quot;: true, &quot;chat&quot;: {&quot;privateMessage&quot;: []}, &quot;screenshare&quot;: {&quot;permissions&quot;: [&quot;Start&quot;, &quot;Invite&quot;, &quot;Collaborate&quot;]}, &quot;video_quality&quot;: &quot;_360p&quot;, &quot;screenshare_quality&quot;: &quot;_1080p&quot;, &quot;annotation&quot;: {&quot;permissions&quot;: []}, &quot;virtualBackgrounds&quot;: {&quot;set&quot;: true, &quot;upload&quot;: true}, &quot;spotlight&quot;: {&quot;permissions&quot;: []}, &quot;raiseHand&quot;: {&quot;raiseOwn&quot;: true, &quot;lowerOthers&quot;: true}, &quot;googleDrive&quot;: {&quot;permissions&quot;: []}, &quot;youtube&quot;: {&quot;permissions&quot;: []}, &quot;advancedSettings&quot;: {&quot;publish&quot;: {&quot;audio&quot;: true, &quot;video&quot;: true, &quot;poorNetworkTurnOffVideo&quot;: true, &quot;screenshare&quot;: true}, &quot;subscribe&quot;: {&quot;to&quot;: [&quot;guest&quot;, &quot;host&quot;], &quot;maxVideoTiles&quot;: 20, &quot;screenshare&quot;: true, &quot;audio&quot;: [], &quot;video&quot;: [], &quot;poorNetworkTurnOffVideo&quot;: []}}, &quot;default&quot;: true}, {&quot;role&quot;: &quot;guest&quot;, &quot;name&quot;: &quot;Guest&quot;, &quot;description&quot;: &quot;Non-host participants can share their audio and video and participate in the meeting.&quot;, &quot;permissions&quot;: {&quot;endRoom&quot;: false, &quot;changeRole&quot;: false, &quot;mute&quot;: false, &quot;unmute&quot;: false, &quot;removeOthers&quot;: false, &quot;startRecording&quot;: false, &quot;remove&quot;: []}, &quot;subscribeDegradation&quot;: true, &quot;chat&quot;: {&quot;privateMessage&quot;: []}, &quot;screenshare&quot;: {&quot;permissions&quot;: []}, &quot;video_quality&quot;: &quot;_360p&quot;, &quot;screenshare_quality&quot;: &quot;_1080p&quot;, &quot;annotation&quot;: {&quot;permissions&quot;: []}, &quot;virtualBackgrounds&quot;: {&quot;set&quot;: true, &quot;upload&quot;: true}, &quot;spotlight&quot;: {&quot;permissions&quot;: []}, &quot;raiseHand&quot;: {&quot;raiseOwn&quot;: true, &quot;lowerOthers&quot;: false}, &quot;googleDrive&quot;: {&quot;permissions&quot;: []}, &quot;youtube&quot;: {&quot;permissions&quot;: []}, &quot;advancedSettings&quot;: {&quot;publish&quot;: {&quot;audio&quot;: true, &quot;video&quot;: true, &quot;poorNetworkTurnOffVideo&quot;: true, &quot;screenshare&quot;: false}, &quot;subscribe&quot;: {&quot;to&quot;: [&quot;host&quot;, &quot;guest&quot;], &quot;maxVideoTiles&quot;: 20, &quot;screenshare&quot;: true, &quot;audio&quot;: [], &quot;video&quot;: [], &quot;poorNetworkTurnOffVideo&quot;: []}}, &quot;default&quot;: true}], &quot;EVENTAPP&quot;: [{&quot;role&quot;: &quot;backstage&quot;, &quot;name&quot;: &quot;Backstage&quot;, &quot;description&quot;: &quot;Backstage can silently observe and comment on on what&#39;s happening on stage. Participants on stage don\u2019t get to see what\u2019s happening at backstage.&quot;, &quot;permissions&quot;: {&quot;endRoom&quot;: true, &quot;changeRole&quot;: true, &quot;mute&quot;: true, &quot;unmute&quot;: true, &quot;removeOthers&quot;: true, &quot;startRecording&quot;: false, &quot;remove&quot;: []}, &quot;subscribeDegradation&quot;: true, &quot;chat&quot;: {&quot;privateMessage&quot;: []}, &quot;screenshare&quot;: {&quot;permissions&quot;: []}, &quot;video_quality&quot;: &quot;_360p&quot;, &quot;screenshare_quality&quot;: &quot;_1080p&quot;, &quot;annotation&quot;: {&quot;permissions&quot;: []}, &quot;virtualBackgrounds&quot;: {&quot;set&quot;: true, &quot;upload&quot;: true}, &quot;spotlight&quot;: {&quot;permissions&quot;: []}, &quot;raiseHand&quot;: {&quot;raiseOwn&quot;: true, &quot;lowerOthers&quot;: false}, &quot;googleDrive&quot;: {&quot;permissions&quot;: []}, &quot;youtube&quot;: {&quot;permissions&quot;: []}, &quot;advancedSettings&quot;: {&quot;publish&quot;: {&quot;audio&quot;: true, &quot;video&quot;: true, &quot;poorNetworkTurnOffVideo&quot;: true, &quot;screenshare&quot;: false}, &quot;subscribe&quot;: {&quot;to&quot;: [&quot;stage&quot;, &quot;backstage&quot;], &quot;maxVideoTiles&quot;: 20, &quot;screenshare&quot;: true, &quot;audio&quot;: [], &quot;video&quot;: [], &quot;poorNetworkTurnOffVideo&quot;: []}}, &quot;default&quot;: true}, {&quot;role&quot;: &quot;stage&quot;, &quot;name&quot;: &quot;Stage&quot;, &quot;description&quot;: &quot;Participants on stage can see each other and share their screen. Viewers can see what&#39;s happening on the stage. Stage can also change the role of other participants.&quot;, &quot;permissions&quot;: {&quot;endRoom&quot;: true, &quot;changeRole&quot;: true, &quot;mute&quot;: false, &quot;unmute&quot;: false, &quot;removeOthers&quot;: false, &quot;startRecording&quot;: true, &quot;remove&quot;: []}, &quot;subscribeDegradation&quot;: true, &quot;chat&quot;: {&quot;privateMessage&quot;: []}, &quot;screenshare&quot;: {&quot;permissions&quot;: []}, &quot;video_quality&quot;: &quot;_360p&quot;, &quot;screenshare_quality&quot;: &quot;_1080p&quot;, &quot;annotation&quot;: {&quot;permissions&quot;: []}, &quot;virtualBackgrounds&quot;: {&quot;set&quot;: true, &quot;upload&quot;: true}, &quot;spotlight&quot;: {&quot;permissions&quot;: []}, &quot;raiseHand&quot;: {&quot;raiseOwn&quot;: true, &quot;lowerOthers&quot;: true}, &quot;googleDrive&quot;: {&quot;permissions&quot;: []}, &quot;youtube&quot;: {&quot;permissions&quot;: []}, &quot;advancedSettings&quot;: {&quot;publish&quot;: {&quot;audio&quot;: true, &quot;video&quot;: true, &quot;poorNetworkTurnOffVideo&quot;: true, &quot;screenshare&quot;: true}, &quot;subscribe&quot;: {&quot;to&quot;: [&quot;stage&quot;], &quot;maxVideoTiles&quot;: 20, &quot;screenshare&quot;: true, &quot;audio&quot;: [], &quot;video&quot;: [], &quot;poorNetworkTurnOffVideo&quot;: []}}, &quot;default&quot;: true}, {&quot;role&quot;: &quot;viewer&quot;, &quot;name&quot;: &quot;Viewer&quot;, &quot;description&quot;: &quot;Viewers can only see the participants on the stage and interact via chat. They do not publish their audio/video/screenshare.&quot;, &quot;permissions&quot;: {&quot;endRoom&quot;: false, &quot;changeRole&quot;: false, &quot;mute&quot;: false, &quot;unmute&quot;: false, &quot;removeOthers&quot;: false, &quot;startRecording&quot;: false, &quot;remove&quot;: []}, &quot;subscribeDegradation&quot;: true, &quot;chat&quot;: {&quot;privateMessage&quot;: []}, &quot;screenshare&quot;: {&quot;permissions&quot;: []}, &quot;video_quality&quot;: &quot;_360p&quot;, &quot;screenshare_quality&quot;: &quot;_1080p&quot;, &quot;annotation&quot;: {&quot;permissions&quot;: []}, &quot;virtualBackgrounds&quot;: {&quot;set&quot;: false, &quot;upload&quot;: false}, &quot;spotlight&quot;: {&quot;permissions&quot;: []}, &quot;raiseHand&quot;: {&quot;raiseOwn&quot;: true, &quot;lowerOthers&quot;: false}, &quot;googleDrive&quot;: {&quot;permissions&quot;: []}, &quot;youtube&quot;: {&quot;permissions&quot;: []}, &quot;advancedSettings&quot;: {&quot;publish&quot;: {&quot;audio&quot;: false, &quot;video&quot;: false, &quot;poorNetworkTurnOffVideo&quot;: false, &quot;screenshare&quot;: false}, &quot;subscribe&quot;: {&quot;to&quot;: [&quot;stage&quot;], &quot;maxVideoTiles&quot;: 20, &quot;screenshare&quot;: true, &quot;audio&quot;: [], &quot;video&quot;: [], &quot;poorNetworkTurnOffVideo&quot;: []}}, &quot;default&quot;: true}]}, &quot;api_version&quot;: &quot;2.0.181&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">13</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">20:35:12.499 [print] {
+  &quot;templates&quot;: [
+    {
+      &quot;type&quot;: &quot;EDTECH&quot;,
+      &quot;name&quot;: &quot;Online Classroom&quot;,
+      &quot;image&quot;: &quot;app-builder-edtech.svg&quot;
+    },
+    {
+      &quot;type&quot;: &quot;AUDIOROOM&quot;,
+      &quot;name&quot;: &quot;Audio Rooms&quot;,
+      &quot;image&quot;: &quot;app-builder-audio-room.svg&quot;
+    },
+    {
+      &quot;type&quot;: &quot;VIDEOCONF&quot;,
+      &quot;name&quot;: &quot;Video Conferencing&quot;,
+      &quot;image&quot;: &quot;app-builder-video-conf.svg&quot;
+    },
+    {
+      &quot;type&quot;: &quot;EVENTAPP&quot;,
+      &quot;name&quot;: &quot;Virtual Events&quot;,
+      &quot;image&quot;: &quot;app-builder-event-app.svg&quot;
+    },
+    {
+      &quot;type&quot;: &quot;CREATEOWN&quot;,
+      &quot;name&quot;: &quot;Create your Own&quot;,
+      &quot;image&quot;: &quot;app-builder-create-own.svg&quot;
+    }
+  ],
+  &quot;roles&quot;: {
+    &quot;EDTECH&quot;: [
+      {
+        &quot;role&quot;: &quot;teacher&quot;,
+        &quot;name&quot;: &quot;Teacher&quot;,
+        &quot;description&quot;: &quot;Teachers&#39; videos are always shown in a presenter mode to all students.&quot;,
+        &quot;permissions&quot;: {
+          &quot;endRoom&quot;: true,
+          &quot;changeRole&quot;: true,
+          &quot;mute&quot;: true,
+          &quot;unmute&quot;: true,
+          &quot;removeOthers&quot;: true,
+          &quot;startRecording&quot;: true,
+          &quot;remove&quot;: [
+            &quot;student&quot;
+          ]
+        },
+        &quot;subscribeDegradation&quot;: true,
+        &quot;chat&quot;: {
+          &quot;privateMessage&quot;: [
+            &quot;student&quot;
+          ]
+        },
+        &quot;screenshare&quot;: {
+          &quot;permissions&quot;: [
+            &quot;Start&quot;,
+            &quot;Invite&quot;,
+            &quot;Collaborate&quot;
+          ]
+        },
+        &quot;video_quality&quot;: &quot;_360p&quot;,
+        &quot;screenshare_quality&quot;: &quot;_1080p&quot;,
+        &quot;annotation&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;virtualBackgrounds&quot;: {
+          &quot;set&quot;: true,
+          &quot;upload&quot;: false
+        },
+        &quot;spotlight&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;raiseHand&quot;: {
+          &quot;raiseOwn&quot;: false,
+          &quot;lowerOthers&quot;: true
+        },
+        &quot;googleDrive&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;youtube&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;advancedSettings&quot;: {
+          &quot;publish&quot;: {
+            &quot;audio&quot;: true,
+            &quot;video&quot;: true,
+            &quot;poorNetworkTurnOffVideo&quot;: true,
+            &quot;screenshare&quot;: true
+          },
+          &quot;subscribe&quot;: {
+            &quot;to&quot;: [
+              &quot;student&quot;,
+              &quot;teacher&quot;
+            ],
+            &quot;maxVideoTiles&quot;: 20,
+            &quot;screenshare&quot;: true,
+            &quot;audio&quot;: [
+            ],
+            &quot;video&quot;: [
+            ],
+            &quot;poorNetworkTurnOffVideo&quot;: [
+            ]
+          }
+        },
+        &quot;default&quot;: true
+      },
+      {
+        &quot;role&quot;: &quot;student&quot;,
+        &quot;name&quot;: &quot;Student&quot;,
+        &quot;description&quot;: &quot;Students can see other students and also engage with teachers through various features.&quot;,
+        &quot;permissions&quot;: {
+          &quot;endRoom&quot;: false,
+          &quot;changeRole&quot;: false,
+          &quot;mute&quot;: false,
+          &quot;unmute&quot;: false,
+          &quot;removeOthers&quot;: false,
+          &quot;startRecording&quot;: true,
+          &quot;remove&quot;: [
+          ]
+        },
+        &quot;subscribeDegradation&quot;: true,
+        &quot;chat&quot;: {
+          &quot;privateMessage&quot;: [
+          ]
+        },
+        &quot;screenshare&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;video_quality&quot;: &quot;_360p&quot;,
+        &quot;screenshare_quality&quot;: &quot;_1080p&quot;,
+        &quot;annotation&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;virtualBackgrounds&quot;: {
+          &quot;set&quot;: true,
+          &quot;upload&quot;: false
+        },
+        &quot;spotlight&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;raiseHand&quot;: {
+          &quot;raiseOwn&quot;: false,
+          &quot;lowerOthers&quot;: true
+        },
+        &quot;googleDrive&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;youtube&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;advancedSettings&quot;: {
+          &quot;publish&quot;: {
+            &quot;audio&quot;: true,
+            &quot;video&quot;: true,
+            &quot;poorNetworkTurnOffVideo&quot;: true,
+            &quot;screenshare&quot;: false
+          },
+          &quot;subscribe&quot;: {
+            &quot;to&quot;: [
+              &quot;teacher&quot;,
+              &quot;student&quot;
+            ],
+            &quot;maxVideoTiles&quot;: 20,
+            &quot;screenshare&quot;: true,
+            &quot;audio&quot;: [
+            ],
+            &quot;video&quot;: [
+            ],
+            &quot;poorNetworkTurnOffVideo&quot;: [
+            ]
+          }
+        },
+        &quot;default&quot;: true
+      }
+    ],
+    &quot;AUDIOROOM&quot;: [
+      {
+        &quot;role&quot;: &quot;listener&quot;,
+        &quot;name&quot;: &quot;Listener&quot;,
+        &quot;description&quot;: &quot;Can only listen to what speaker is saying. They can\u2019t see other listeners.&quot;,
+        &quot;permissions&quot;: {
+          &quot;endRoom&quot;: false,
+          &quot;changeRole&quot;: false,
+          &quot;mute&quot;: false,
+          &quot;unmute&quot;: false,
+          &quot;removeOthers&quot;: false,
+          &quot;startRecording&quot;: false,
+          &quot;remove&quot;: [
+          ]
+        },
+        &quot;subscribeDegradation&quot;: true,
+        &quot;chat&quot;: {
+          &quot;privateMessage&quot;: [
+          ]
+        },
+        &quot;screenshare&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;video_quality&quot;: &quot;_360p&quot;,
+        &quot;screenshare_quality&quot;: &quot;_1080p&quot;,
+        &quot;annotation&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;virtualBackgrounds&quot;: {
+          &quot;set&quot;: false,
+          &quot;upload&quot;: false
+        },
+        &quot;spotlight&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;raiseHand&quot;: {
+          &quot;raiseOwn&quot;: true,
+          &quot;lowerOthers&quot;: false
+        },
+        &quot;googleDrive&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;youtube&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;advancedSettings&quot;: {
+          &quot;publish&quot;: {
+            &quot;audio&quot;: false,
+            &quot;video&quot;: false,
+            &quot;poorNetworkTurnOffVideo&quot;: true,
+            &quot;screenshare&quot;: false
+          },
+          &quot;subscribe&quot;: {
+            &quot;to&quot;: [
+              &quot;speaker&quot;,
+              &quot;moderator&quot;
+            ],
+            &quot;maxVideoTiles&quot;: 20,
+            &quot;screenshare&quot;: false,
+            &quot;audio&quot;: [
+            ],
+            &quot;video&quot;: [
+            ],
+            &quot;poorNetworkTurnOffVideo&quot;: [
+            ]
+          }
+        },
+        &quot;default&quot;: true
+      },
+      {
+        &quot;role&quot;: &quot;speaker&quot;,
+        &quot;name&quot;: &quot;Speaker&quot;,
+        &quot;description&quot;: &quot;Audio only participant can speak their heart out without having to share video.&quot;,
+        &quot;permissions&quot;: {
+          &quot;endRoom&quot;: true,
+          &quot;changeRole&quot;: false,
+          &quot;mute&quot;: true,
+          &quot;unmute&quot;: true,
+          &quot;removeOthers&quot;: false,
+          &quot;startRecording&quot;: true,
+          &quot;remove&quot;: [
+          ]
+        },
+        &quot;subscribeDegradation&quot;: true,
+        &quot;chat&quot;: {
+          &quot;privateMessage&quot;: [
+          ]
+        },
+        &quot;screenshare&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;video_quality&quot;: &quot;_360p&quot;,
+        &quot;screenshare_quality&quot;: &quot;_1080p&quot;,
+        &quot;annotation&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;virtualBackgrounds&quot;: {
+          &quot;set&quot;: false,
+          &quot;upload&quot;: false
+        },
+        &quot;spotlight&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;raiseHand&quot;: {
+          &quot;raiseOwn&quot;: true,
+          &quot;lowerOthers&quot;: true
+        },
+        &quot;googleDrive&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;youtube&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;advancedSettings&quot;: {
+          &quot;publish&quot;: {
+            &quot;audio&quot;: true,
+            &quot;video&quot;: false,
+            &quot;poorNetworkTurnOffVideo&quot;: false,
+            &quot;screenshare&quot;: false
+          },
+          &quot;subscribe&quot;: {
+            &quot;to&quot;: [
+              &quot;speaker&quot;,
+              &quot;moderator&quot;
+            ],
+            &quot;maxVideoTiles&quot;: 20,
+            &quot;screenshare&quot;: false,
+            &quot;audio&quot;: [
+            ],
+            &quot;video&quot;: [
+            ],
+            &quot;poorNetworkTurnOffVideo&quot;: [
+            ]
+          }
+        },
+        &quot;default&quot;: true
+      },
+      {
+        &quot;role&quot;: &quot;moderator&quot;,
+        &quot;name&quot;: &quot;Moderator&quot;,
+        &quot;description&quot;: &quot;Moderator is the role which controls and leads the discussion. This role can invite any listener to become a speaker.&quot;,
+        &quot;permissions&quot;: {
+          &quot;endRoom&quot;: true,
+          &quot;changeRole&quot;: true,
+          &quot;mute&quot;: true,
+          &quot;unmute&quot;: true,
+          &quot;removeOthers&quot;: true,
+          &quot;startRecording&quot;: true,
+          &quot;remove&quot;: [
+          ]
+        },
+        &quot;subscribeDegradation&quot;: true,
+        &quot;chat&quot;: {
+          &quot;privateMessage&quot;: [
+          ]
+        },
+        &quot;screenshare&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;video_quality&quot;: &quot;_360p&quot;,
+        &quot;screenshare_quality&quot;: &quot;_1080p&quot;,
+        &quot;annotation&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;virtualBackgrounds&quot;: {
+          &quot;set&quot;: false,
+          &quot;upload&quot;: false
+        },
+        &quot;spotlight&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;raiseHand&quot;: {
+          &quot;raiseOwn&quot;: true,
+          &quot;lowerOthers&quot;: true
+        },
+        &quot;googleDrive&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;youtube&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;advancedSettings&quot;: {
+          &quot;publish&quot;: {
+            &quot;audio&quot;: true,
+            &quot;video&quot;: false,
+            &quot;poorNetworkTurnOffVideo&quot;: false,
+            &quot;screenshare&quot;: false
+          },
+          &quot;subscribe&quot;: {
+            &quot;to&quot;: [
+              &quot;speaker&quot;,
+              &quot;moderator&quot;
+            ],
+            &quot;maxVideoTiles&quot;: 20,
+            &quot;screenshare&quot;: false,
+            &quot;audio&quot;: [
+            ],
+            &quot;video&quot;: [
+            ],
+            &quot;poorNetworkTurnOffVideo&quot;: [
+            ]
+          }
+        },
+        &quot;default&quot;: true
+      }
+    ],
+    &quot;VIDEOCONF&quot;: [
+      {
+        &quot;role&quot;: &quot;host&quot;,
+        &quot;name&quot;: &quot;Host&quot;,
+        &quot;description&quot;: &quot;The maestro of your video conferencing application comes with superpowers like sharing their screen during a video call.&quot;,
+        &quot;permissions&quot;: {
+          &quot;endRoom&quot;: true,
+          &quot;changeRole&quot;: true,
+          &quot;mute&quot;: true,
+          &quot;unmute&quot;: true,
+          &quot;removeOthers&quot;: true,
+          &quot;startRecording&quot;: true,
+          &quot;remove&quot;: [
+            &quot;guest&quot;
+          ]
+        },
+        &quot;subscribeDegradation&quot;: true,
+        &quot;chat&quot;: {
+          &quot;privateMessage&quot;: [
+          ]
+        },
+        &quot;screenshare&quot;: {
+          &quot;permissions&quot;: [
+            &quot;Start&quot;,
+            &quot;Invite&quot;,
+            &quot;Collaborate&quot;
+          ]
+        },
+        &quot;video_quality&quot;: &quot;_360p&quot;,
+        &quot;screenshare_quality&quot;: &quot;_1080p&quot;,
+        &quot;annotation&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;virtualBackgrounds&quot;: {
+          &quot;set&quot;: true,
+          &quot;upload&quot;: true
+        },
+        &quot;spotlight&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;raiseHand&quot;: {
+          &quot;raiseOwn&quot;: true,
+          &quot;lowerOthers&quot;: true
+        },
+        &quot;googleDrive&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;youtube&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;advancedSettings&quot;: {
+          &quot;publish&quot;: {
+            &quot;audio&quot;: true,
+            &quot;video&quot;: true,
+            &quot;poorNetworkTurnOffVideo&quot;: true,
+            &quot;screenshare&quot;: true
+          },
+          &quot;subscribe&quot;: {
+            &quot;to&quot;: [
+              &quot;guest&quot;,
+              &quot;host&quot;
+            ],
+            &quot;maxVideoTiles&quot;: 20,
+            &quot;screenshare&quot;: true,
+            &quot;audio&quot;: [
+            ],
+            &quot;video&quot;: [
+            ],
+            &quot;poorNetworkTurnOffVideo&quot;: [
+            ]
+          }
+        },
+        &quot;default&quot;: true
+      },
+      {
+        &quot;role&quot;: &quot;guest&quot;,
+        &quot;name&quot;: &quot;Guest&quot;,
+        &quot;description&quot;: &quot;Non-host participants can share their audio and video and participate in the meeting.&quot;,
+        &quot;permissions&quot;: {
+          &quot;endRoom&quot;: false,
+          &quot;changeRole&quot;: false,
+          &quot;mute&quot;: false,
+          &quot;unmute&quot;: false,
+          &quot;removeOthers&quot;: false,
+          &quot;startRecording&quot;: false,
+          &quot;remove&quot;: [
+          ]
+        },
+        &quot;subscribeDegradation&quot;: true,
+        &quot;chat&quot;: {
+          &quot;privateMessage&quot;: [
+          ]
+        },
+        &quot;screenshare&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;video_quality&quot;: &quot;_360p&quot;,
+        &quot;screenshare_quality&quot;: &quot;_1080p&quot;,
+        &quot;annotation&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;virtualBackgrounds&quot;: {
+          &quot;set&quot;: true,
+          &quot;upload&quot;: true
+        },
+        &quot;spotlight&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;raiseHand&quot;: {
+          &quot;raiseOwn&quot;: true,
+          &quot;lowerOthers&quot;: false
+        },
+        &quot;googleDrive&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;youtube&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;advancedSettings&quot;: {
+          &quot;publish&quot;: {
+            &quot;audio&quot;: true,
+            &quot;video&quot;: true,
+            &quot;poorNetworkTurnOffVideo&quot;: true,
+            &quot;screenshare&quot;: false
+          },
+          &quot;subscribe&quot;: {
+            &quot;to&quot;: [
+              &quot;host&quot;,
+              &quot;guest&quot;
+            ],
+            &quot;maxVideoTiles&quot;: 20,
+            &quot;screenshare&quot;: true,
+            &quot;audio&quot;: [
+            ],
+            &quot;video&quot;: [
+            ],
+            &quot;poorNetworkTurnOffVideo&quot;: [
+            ]
+          }
+        },
+        &quot;default&quot;: true
+      }
+    ],
+    &quot;EVENTAPP&quot;: [
+      {
+        &quot;role&quot;: &quot;backstage&quot;,
+        &quot;name&quot;: &quot;Backstage&quot;,
+        &quot;description&quot;: &quot;Backstage can silently observe and comment on on what&#39;s happening on stage. Participants on stage don\u2019t get to see what\u2019s happening at backstage.&quot;,
+        &quot;permissions&quot;: {
+          &quot;endRoom&quot;: true,
+          &quot;changeRole&quot;: true,
+          &quot;mute&quot;: true,
+          &quot;unmute&quot;: true,
+          &quot;removeOthers&quot;: true,
+          &quot;startRecording&quot;: false,
+          &quot;remove&quot;: [
+          ]
+        },
+        &quot;subscribeDegradation&quot;: true,
+        &quot;chat&quot;: {
+          &quot;privateMessage&quot;: [
+          ]
+        },
+        &quot;screenshare&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;video_quality&quot;: &quot;_360p&quot;,
+        &quot;screenshare_quality&quot;: &quot;_1080p&quot;,
+        &quot;annotation&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;virtualBackgrounds&quot;: {
+          &quot;set&quot;: true,
+          &quot;upload&quot;: true
+        },
+        &quot;spotlight&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;raiseHand&quot;: {
+          &quot;raiseOwn&quot;: true,
+          &quot;lowerOthers&quot;: false
+        },
+        &quot;googleDrive&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;youtube&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;advancedSettings&quot;: {
+          &quot;publish&quot;: {
+            &quot;audio&quot;: true,
+            &quot;video&quot;: true,
+            &quot;poorNetworkTurnOffVideo&quot;: true,
+            &quot;screenshare&quot;: false
+          },
+          &quot;subscribe&quot;: {
+            &quot;to&quot;: [
+              &quot;stage&quot;,
+              &quot;backstage&quot;
+            ],
+            &quot;maxVideoTiles&quot;: 20,
+            &quot;screenshare&quot;: true,
+            &quot;audio&quot;: [
+            ],
+            &quot;video&quot;: [
+            ],
+            &quot;poorNetworkTurnOffVideo&quot;: [
+            ]
+          }
+        },
+        &quot;default&quot;: true
+      },
+      {
+        &quot;role&quot;: &quot;stage&quot;,
+        &quot;name&quot;: &quot;Stage&quot;,
+        &quot;description&quot;: &quot;Participants on stage can see each other and share their screen. Viewers can see what&#39;s happening on the stage. Stage can also change the role of other participants.&quot;,
+        &quot;permissions&quot;: {
+          &quot;endRoom&quot;: true,
+          &quot;changeRole&quot;: true,
+          &quot;mute&quot;: false,
+          &quot;unmute&quot;: false,
+          &quot;removeOthers&quot;: false,
+          &quot;startRecording&quot;: true,
+          &quot;remove&quot;: [
+          ]
+        },
+        &quot;subscribeDegradation&quot;: true,
+        &quot;chat&quot;: {
+          &quot;privateMessage&quot;: [
+          ]
+        },
+        &quot;screenshare&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;video_quality&quot;: &quot;_360p&quot;,
+        &quot;screenshare_quality&quot;: &quot;_1080p&quot;,
+        &quot;annotation&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;virtualBackgrounds&quot;: {
+          &quot;set&quot;: true,
+          &quot;upload&quot;: true
+        },
+        &quot;spotlight&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;raiseHand&quot;: {
+          &quot;raiseOwn&quot;: true,
+          &quot;lowerOthers&quot;: true
+        },
+        &quot;googleDrive&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;youtube&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;advancedSettings&quot;: {
+          &quot;publish&quot;: {
+            &quot;audio&quot;: true,
+            &quot;video&quot;: true,
+            &quot;poorNetworkTurnOffVideo&quot;: true,
+            &quot;screenshare&quot;: true
+          },
+          &quot;subscribe&quot;: {
+            &quot;to&quot;: [
+              &quot;stage&quot;
+            ],
+            &quot;maxVideoTiles&quot;: 20,
+            &quot;screenshare&quot;: true,
+            &quot;audio&quot;: [
+            ],
+            &quot;video&quot;: [
+            ],
+            &quot;poorNetworkTurnOffVideo&quot;: [
+            ]
+          }
+        },
+        &quot;default&quot;: true
+      },
+      {
+        &quot;role&quot;: &quot;viewer&quot;,
+        &quot;name&quot;: &quot;Viewer&quot;,
+        &quot;description&quot;: &quot;Viewers can only see the participants on the stage and interact via chat. They do not publish their audio/video/screenshare.&quot;,
+        &quot;permissions&quot;: {
+          &quot;endRoom&quot;: false,
+          &quot;changeRole&quot;: false,
+          &quot;mute&quot;: false,
+          &quot;unmute&quot;: false,
+          &quot;removeOthers&quot;: false,
+          &quot;startRecording&quot;: false,
+          &quot;remove&quot;: [
+          ]
+        },
+        &quot;subscribeDegradation&quot;: true,
+        &quot;chat&quot;: {
+          &quot;privateMessage&quot;: [
+          ]
+        },
+        &quot;screenshare&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;video_quality&quot;: &quot;_360p&quot;,
+        &quot;screenshare_quality&quot;: &quot;_1080p&quot;,
+        &quot;annotation&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;virtualBackgrounds&quot;: {
+          &quot;set&quot;: false,
+          &quot;upload&quot;: false
+        },
+        &quot;spotlight&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;raiseHand&quot;: {
+          &quot;raiseOwn&quot;: true,
+          &quot;lowerOthers&quot;: false
+        },
+        &quot;googleDrive&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;youtube&quot;: {
+          &quot;permissions&quot;: [
+          ]
+        },
+        &quot;advancedSettings&quot;: {
+          &quot;publish&quot;: {
+            &quot;audio&quot;: false,
+            &quot;video&quot;: false,
+            &quot;poorNetworkTurnOffVideo&quot;: false,
+            &quot;screenshare&quot;: false
+          },
+          &quot;subscribe&quot;: {
+            &quot;to&quot;: [
+              &quot;stage&quot;
+            ],
+            &quot;maxVideoTiles&quot;: 20,
+            &quot;screenshare&quot;: true,
+            &quot;audio&quot;: [
+            ],
+            &quot;video&quot;: [
+            ],
+            &quot;poorNetworkTurnOffVideo&quot;: [
+            ]
+          }
+        },
+        &quot;default&quot;: true
+      }
+    ]
+  },
+  &quot;api_version&quot;: &quot;2.0.181&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

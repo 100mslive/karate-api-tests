@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-3","id":1},{"content":"pool-1-thread-5","id":2},{"content":"pool-1-thread-2","id":3},{"content":"pool-1-thread-1","id":4},{"content":"pool-1-thread-4","id":5}];
+var items = [{"id":1,"group":1,"content":"endpoints\/apps\/get-details[1:10]","start":1657264976025,"end":1657264976752,"title":"endpoints\/apps\/get-details[1:10] 12:52:56.025-12:52:56.752 get all users and then get the first user by id","className":"failed"},{"id":2,"group":2,"content":"endpoints\/rooms\/get-rooms[1:8]","start":1657264976025,"end":1657264976752,"title":"endpoints\/rooms\/get-rooms[1:8] 12:52:56.025-12:52:56.752 get all users and then get the first user by id","className":"failed"},{"id":3,"group":3,"content":"endpoints\/usagestats\/get-usage-stats[1:8]","start":1657264977014,"end":1657264977423,"title":"endpoints\/usagestats\/get-usage-stats[1:8] 12:52:57.014-12:52:57.423 get all users and then get the first user by id"},{"id":4,"group":1,"content":"endpoints\/starterkits\/get-starter-kits[1:5]","start":1657264976757,"end":1657264977997,"title":"endpoints\/starterkits\/get-starter-kits[1:5] 12:52:56.757-12:52:57.997 get all users and then get the first user by id"},{"id":5,"group":4,"content":"endpoints\/templates\/get-all-templates[1:7]","start":1657264976925,"end":1657264977136,"title":"endpoints\/templates\/get-all-templates[1:7] 12:52:56.925-12:52:57.136 get all users and then get the first user by id","className":"failed"},{"id":6,"group":2,"content":"endpoints\/sessions\/get-sessions[1:8]","start":1657264976757,"end":1657264976922,"title":"endpoints\/sessions\/get-sessions[1:8] 12:52:56.757-12:52:56.922 get all users and then get the first user by id"},{"id":7,"group":2,"content":"endpoints\/templates\/get-default-templates[1:7]","start":1657264976925,"end":1657264977083,"title":"endpoints\/templates\/get-default-templates[1:7] 12:52:56.925-12:52:57.083 get all users and then get the first user by id"},{"id":8,"group":3,"content":"endpoints\/apps\/get-all-apps[1:8]","start":1657264976025,"end":1657264977011,"title":"endpoints\/apps\/get-all-apps[1:8] 12:52:56.025-12:52:57.011 get all users and then get the first user by id","className":"failed"},{"id":9,"group":4,"content":"endpoints\/apps\/add-new-app[1:8]","start":1657264976025,"end":1657264976921,"title":"endpoints\/apps\/add-new-app[1:8] 12:52:56.025-12:52:56.921 get all users and then get the first user by id","className":"failed"},{"id":10,"group":5,"content":"endpoints\/auths\/get-auths[1:8]","start":1657264976025,"end":1657264977012,"title":"endpoints\/auths\/get-auths[1:8] 12:52:56.025-12:52:57.012 get all users and then get the first user by id"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

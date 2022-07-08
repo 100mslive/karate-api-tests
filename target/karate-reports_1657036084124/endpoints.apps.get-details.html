@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("47354065-db4c-4f10-a4ae-60003b743b17",{name:"sahilkashyap"});
+    posthog.capture("report_feature",{karate_version:"1.2.0",karate_meta:null});
+  }
+});
+</script>
+  
+    <title>endpoints.apps.get-details</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-07-05 09:15:55 pm</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:10]"><span>[1:10]</span> <span>get all users and then get the first user by id</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">endpoints/apps/get-details.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">get details app</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:10]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">debug</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:10]</span>
+                <span class="scenario-name">get all users and then get the first user by id</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1440</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:10]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:10]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://qa-in2.100ms.live/hmsapi&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">21:15:53.596 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:10]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def tokengenerator = Java.type(&#39;utils.TokenGenerator&#39;);</span>
+      </div>
+    </div>
+    <div class="time-cell passed">13</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:10]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def token = tokengenerator.getToken();</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:10]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def result = call read(&#39;add-new-app.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1404</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.8.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">endpoints.apps.add-new-app</div>
+      </div>
+      <div class="time-cell passed">1364</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call">
+    <div class="step-container" id="0.8.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://qa-in2.100ms.live/hmsapi&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call">
+    <div class="step-container" id="0.8.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def tokengenerator = Java.type(&#39;utils.TokenGenerator&#39;);</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call">
+    <div class="step-container" id="0.8.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def token = tokengenerator.getToken();</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call">
+    <div class="step-container" id="0.8.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/all-apps&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call">
+    <div class="step-container" id="0.8.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header authorization = token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call">
+    <div class="step-container" id="0.8.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def payload = read(&#39;../../data/add-new-app.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">21</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call">
+    <div class="step-container" id="0.8.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print payload</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8.0.call.0.12">21:15:53.741 [print] {
+  &quot;subdomain_name&quot;: &quot;sahil-conf12345&quot;,
+  &quot;app_type&quot;: &quot;VIDEOCONF&quot;,
+  &quot;app_name&quot;: &quot;conf56568&quot;,
+  &quot;region&quot;: &quot;in&quot;,
+  &quot;ts_template_id&quot;: 10,
+  &quot;starter_kit_id&quot;: 6,
+  &quot;roles&quot;: [
+    {
+      &quot;role&quot;: &quot;host&quot;,
+      &quot;permissions&quot;: {
+        &quot;mute&quot;: true,
+        &quot;unmute&quot;: true,
+        &quot;removeOthers&quot;: true,
+        &quot;endRoom&quot;: true,
+        &quot;changeRole&quot;: true,
+        &quot;lockRoom&quot;: false,
+        &quot;sendRoomState&quot;: false
+      },
+      &quot;subscribeDegradation&quot;: true,
+      &quot;priority&quot;: 1,
+      &quot;chat&quot;: {
+        &quot;privateMessage&quot;: [
+        ]
+      },
+      &quot;screenshare&quot;: {
+        &quot;permissions&quot;: [
+        ]
+      },
+      &quot;annotation&quot;: {
+        &quot;permissions&quot;: [
+        ]
+      },
+      &quot;virtualBackgrounds&quot;: {
+        &quot;set&quot;: true,
+        &quot;upload&quot;: false
+      },
+      &quot;spotlight&quot;: {
+        &quot;permissions&quot;: [
+        ]
+      },
+      &quot;raiseHand&quot;: {
+        &quot;raiseOwn&quot;: false,
+        &quot;lowerOthers&quot;: true
+      },
+      &quot;googleDrive&quot;: {
+        &quot;permissions&quot;: [
+        ]
+      },
+      &quot;youtube&quot;: {
+        &quot;permissions&quot;: [
+        ]
+      },
+      &quot;advancedSettings&quot;: {
+        &quot;publish&quot;: {
+          &quot;audio&quot;: true,
+          &quot;video&quot;: true,
+          &quot;screenshare&quot;: true,
+          &quot;params&quot;: {
+            &quot;video&quot;: {
+              &quot;bitRate&quot;: 300,
+              &quot;frameRate&quot;: 30,
+              &quot;codec&quot;: &quot;vp8&quot;
+            },
+            &quot;screenshare&quot;: {
+              &quot;bitRate&quot;: null,
+              &quot;frameRate&quot;: 10,
+              &quot;codec&quot;: &quot;vp8&quot;
+            }
+          }
+        },
+        &quot;subscribe&quot;: {
+          &quot;to&quot;: [
+            &quot;guest&quot;,
+            &quot;host&quot;
+          ]
+        }
+      },
+      &quot;video_quality&quot;: &quot;_360p&quot;,
+      &quot;screenshare_quality&quot;: &quot;_1080p&quot;,
+      &quot;default&quot;: false,
+      &quot;video_aspect_ratio&quot;: &quot;4:3&quot;
+    },
+    {
+      &quot;role&quot;: &quot;guest&quot;,
+      &quot;permissions&quot;: {
+        &quot;mute&quot;: false,
+        &quot;unmute&quot;: false,
+        &quot;removeOthers&quot;: false,
+        &quot;endRoom&quot;: false,
+        &quot;changeRole&quot;: false,
+        &quot;lockRoom&quot;: false,
+        &quot;sendRoomState&quot;: false
+      },
+      &quot;subscribeDegradation&quot;: true,
+      &quot;priority&quot;: 1,
+      &quot;chat&quot;: {
+        &quot;privateMessage&quot;: [
+        ]
+      },
+      &quot;screenshare&quot;: {
+        &quot;permissions&quot;: [
+        ]
+      },
+      &quot;annotation&quot;: {
+        &quot;permissions&quot;: [
+        ]
+      },
+      &quot;virtualBackgrounds&quot;: {
+        &quot;set&quot;: true,
+        &quot;upload&quot;: false
+      },
+      &quot;spotlight&quot;: {
+        &quot;permissions&quot;: [
+        ]
+      },
+      &quot;raiseHand&quot;: {
+        &quot;raiseOwn&quot;: false,
+        &quot;lowerOthers&quot;: true
+      },
+      &quot;googleDrive&quot;: {
+        &quot;permissions&quot;: [
+        ]
+      },
+      &quot;youtube&quot;: {
+        &quot;permissions&quot;: [
+        ]
+      },
+      &quot;advancedSettings&quot;: {
+        &quot;publish&quot;: {
+          &quot;audio&quot;: true,
+          &quot;video&quot;: true,
+          &quot;screenshare&quot;: true,
+          &quot;params&quot;: {
+            &quot;video&quot;: {
+              &quot;bitRate&quot;: 300,
+              &quot;frameRate&quot;: 30,
+              &quot;codec&quot;: &quot;vp8&quot;
+            },
+            &quot;screenshare&quot;: {
+              &quot;bitRate&quot;: null,
+              &quot;frameRate&quot;: 10,
+              &quot;codec&quot;: &quot;vp8&quot;
+            }
+          }
+        },
+        &quot;subscribe&quot;: {
+          &quot;to&quot;: [
+            &quot;host&quot;,
+            &quot;guest&quot;
+          ]
+        }
+      },
+      &quot;video_quality&quot;: &quot;_360p&quot;,
+      &quot;screenshare_quality&quot;: &quot;_1080p&quot;,
+      &quot;default&quot;: false,
+      &quot;video_aspect_ratio&quot;: &quot;4:3&quot;
+    }
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call">
+    <div class="step-container" id="0.8.0.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request payload</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call">
+    <div class="step-container" id="0.8.0.call.0.14">
+      <div class="step-ref bg-step">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1306</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8.0.call.0.14">21:15:54.075 request:
+1 &gt; POST https://qa-in2.100ms.live/hmsapi/all-apps
+1 &gt; authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2ZXJzaW9uIjoyLCJ0eXBlIjoibWFuYWdlbWVudCIsImFwcF9kYXRhIjpudWxsLCJhY2Nlc3Nfa2V5IjoiNjI4MjJkYjAwNWM2NDg3ZjllNTU2NDU2IiwiZXhwIjoxNjU3MDcwMzk2LCJqdGkiOiIyNmQ0Yzg1NS1kOWQ3LTRjNmEtYThkOS01YTc3MDE5MTU4MTYiLCJpYXQiOjE2NTcwMzQzOTYsImlzcyI6IjYyODIyZGFmMDVjNjQ4N2Y5ZTU1NjQ1MiIsIm5iZiI6MTY1NzAzNDM5Niwic3ViIjoiYXBpIn0.dyyfKBK4xrGn7NGait_q-vCVJIlVpzv5fbbKxY1-Wck
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 1777
+1 &gt; Host: qa-in2.100ms.live
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.1.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;subdomain_name&quot;:&quot;sahil-conf12345&quot;,&quot;app_type&quot;:&quot;VIDEOCONF&quot;,&quot;app_name&quot;:&quot;conf56568&quot;,&quot;region&quot;:&quot;in&quot;,&quot;ts_template_id&quot;:10,&quot;starter_kit_id&quot;:6,&quot;roles&quot;:[{&quot;role&quot;:&quot;host&quot;,&quot;permissions&quot;:{&quot;mute&quot;:true,&quot;unmute&quot;:true,&quot;removeOthers&quot;:true,&quot;endRoom&quot;:true,&quot;changeRole&quot;:true,&quot;lockRoom&quot;:false,&quot;sendRoomState&quot;:false},&quot;subscribeDegradation&quot;:true,&quot;priority&quot;:1,&quot;chat&quot;:{&quot;privateMessage&quot;:[]},&quot;screenshare&quot;:{&quot;permissions&quot;:[]},&quot;annotation&quot;:{&quot;permissions&quot;:[]},&quot;virtualBackgrounds&quot;:{&quot;set&quot;:true,&quot;upload&quot;:false},&quot;spotlight&quot;:{&quot;permissions&quot;:[]},&quot;raiseHand&quot;:{&quot;raiseOwn&quot;:false,&quot;lowerOthers&quot;:true},&quot;googleDrive&quot;:{&quot;permissions&quot;:[]},&quot;youtube&quot;:{&quot;permissions&quot;:[]},&quot;advancedSettings&quot;:{&quot;publish&quot;:{&quot;audio&quot;:true,&quot;video&quot;:true,&quot;screenshare&quot;:true,&quot;params&quot;:{&quot;video&quot;:{&quot;bitRate&quot;:300,&quot;frameRate&quot;:30,&quot;codec&quot;:&quot;vp8&quot;},&quot;screenshare&quot;:{&quot;bitRate&quot;:null,&quot;frameRate&quot;:10,&quot;codec&quot;:&quot;vp8&quot;}}},&quot;subscribe&quot;:{&quot;to&quot;:[&quot;guest&quot;,&quot;host&quot;]}},&quot;video_quality&quot;:&quot;_360p&quot;,&quot;screenshare_quality&quot;:&quot;_1080p&quot;,&quot;default&quot;:false,&quot;video_aspect_ratio&quot;:&quot;4:3&quot;},{&quot;role&quot;:&quot;guest&quot;,&quot;permissions&quot;:{&quot;mute&quot;:false,&quot;unmute&quot;:false,&quot;removeOthers&quot;:false,&quot;endRoom&quot;:false,&quot;changeRole&quot;:false,&quot;lockRoom&quot;:false,&quot;sendRoomState&quot;:false},&quot;subscribeDegradation&quot;:true,&quot;priority&quot;:1,&quot;chat&quot;:{&quot;privateMessage&quot;:[]},&quot;screenshare&quot;:{&quot;permissions&quot;:[]},&quot;annotation&quot;:{&quot;permissions&quot;:[]},&quot;virtualBackgrounds&quot;:{&quot;set&quot;:true,&quot;upload&quot;:false},&quot;spotlight&quot;:{&quot;permissions&quot;:[]},&quot;raiseHand&quot;:{&quot;raiseOwn&quot;:false,&quot;lowerOthers&quot;:true},&quot;googleDrive&quot;:{&quot;permissions&quot;:[]},&quot;youtube&quot;:{&quot;permissions&quot;:[]},&quot;advancedSettings&quot;:{&quot;publish&quot;:{&quot;audio&quot;:true,&quot;video&quot;:true,&quot;screenshare&quot;:true,&quot;params&quot;:{&quot;video&quot;:{&quot;bitRate&quot;:300,&quot;frameRate&quot;:30,&quot;codec&quot;:&quot;vp8&quot;},&quot;screenshare&quot;:{&quot;bitRate&quot;:null,&quot;frameRate&quot;:10,&quot;codec&quot;:&quot;vp8&quot;}}},&quot;subscribe&quot;:{&quot;to&quot;:[&quot;host&quot;,&quot;guest&quot;]}},&quot;video_quality&quot;:&quot;_360p&quot;,&quot;screenshare_quality&quot;:&quot;_1080p&quot;,&quot;default&quot;:false,&quot;video_aspect_ratio&quot;:&quot;4:3&quot;}]}
+
+21:15:55.038 response time in milliseconds: 960
+1 &lt; 200
+1 &lt; server: istio-envoy
+1 &lt; date: Tue, 05 Jul 2022 15:45:55 GMT
+1 &lt; content-type: application/json
+1 &lt; cache-control: no-store
+1 &lt; x-request-id: 3d7ba92d-acca-40fc-a2a9-2290f3b04f9f
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; content-length: 2358
+1 &lt; vary: Origin
+1 &lt; x-envoy-upstream-service-time: 282
+1 &lt; content-security-policy: frame-ancestors none;
+1 &lt; strict-transport-security: max-age=31536000; includeSubDomains
+1 &lt; x-xss-protection: 1; mode=block
+1 &lt; x-content-type-options: nosniff
+1 &lt; referrer-policy: no-referrer
+1 &lt; x-download-options: noopen
+1 &lt; x-dns-prefetch-control: off
+1 &lt; permissions-policy: camera &#39;none&#39;;microphone &#39;none&#39;;geolocation &#39;none&#39;;encrypted-media &#39;none&#39;;payment &#39;none&#39;;speaker &#39;none&#39;;usb &#39;none&#39;;
+{&quot;user_name&quot;: &quot;sahil&quot;, &quot;apps&quot;: [{&quot;id&quot;: 2599, &quot;app_type&quot;: &quot;VIDEOCONF&quot;, &quot;app_name&quot;: &quot;conf123&quot;, &quot;subdomain_name&quot;: &quot;sahil-conf123.qa-app.100ms.live&quot;, &quot;room_id&quot;: &quot;tae-mqh-imu&quot;, &quot;logo&quot;: &quot;https://100ms.live/images/100ms-logo.png&quot;, &quot;color&quot;: &quot;#2F80FF&quot;, &quot;font&quot;: &quot;INTER&quot;, &quot;tile_shape&quot;: &quot;SQUARE&quot;, &quot;theme&quot;: &quot;DARK&quot;, &quot;video_off_avatars&quot;: &quot;NONE&quot;, &quot;chat&quot;: true, &quot;screenshare&quot;: true, &quot;annotation&quot;: true, &quot;background&quot;: true, &quot;spotlight&quot;: true, &quot;raise_hand&quot;: true, &quot;google_drive&quot;: true, &quot;youtube&quot;: true, &quot;whiteboard&quot;: true, &quot;policy&quot;: &quot;conf123_videoconf_f41d8e4a-9c41-4c46-98c7-cc9333700eb5&quot;, &quot;policy_id&quot;: &quot;62c456fbe0373c994faad926&quot;, &quot;room_links&quot;: {&quot;guest&quot;: {&quot;identifier&quot;: &quot;ife-ghg-hve&quot;, &quot;is_active&quot;: true, &quot;subdomain&quot;: &quot;sahil-conf123.qa-app.100ms.live&quot;}, &quot;host&quot;: {&quot;identifier&quot;: &quot;tae-mqh-imu&quot;, &quot;is_active&quot;: true, &quot;subdomain&quot;: &quot;sahil-conf123.qa-app.100ms.live&quot;}}, &quot;metadata&quot;: &quot;&quot;, &quot;default&quot;: false, &quot;starter_kit_id&quot;: 6, &quot;ts_template_id&quot;: 10, &quot;deployment_url&quot;: null, &quot;icon_url&quot;: null, &quot;user_name&quot;: &quot;sahil&quot;}, {&quot;id&quot;: 2592, &quot;app_type&quot;: &quot;VIDEOCONF&quot;, &quot;app_name&quot;: &quot;conf&quot;, &quot;subdomain_name&quot;: &quot;sahil-conf.qa-app.100ms.live&quot;, &quot;room_id&quot;: &quot;onu-zim-lup&quot;, &quot;logo&quot;: &quot;https://100ms.live/images/100ms-logo.png&quot;, &quot;color&quot;: &quot;#2F80FF&quot;, &quot;font&quot;: &quot;INTER&quot;, &quot;tile_shape&quot;: &quot;1-1&quot;, &quot;theme&quot;: &quot;DARK&quot;, &quot;video_off_avatars&quot;: &quot;NONE&quot;, &quot;chat&quot;: true, &quot;screenshare&quot;: true, &quot;annotation&quot;: true, &quot;background&quot;: true, &quot;spotlight&quot;: true, &quot;raise_hand&quot;: true, &quot;google_drive&quot;: true, &quot;youtube&quot;: true, &quot;whiteboard&quot;: true, &quot;policy&quot;: &quot;conf_videoconf_89f60ec2-fc60-4471-bffc-13c67284a3b5&quot;, &quot;policy_id&quot;: &quot;62c28a94e0373c994faad923&quot;, &quot;room_links&quot;: {&quot;__internal_recorder&quot;: {&quot;identifier&quot;: &quot;kbr-mqu-hud&quot;, &quot;is_active&quot;: true, &quot;subdomain&quot;: &quot;sahil-conf.qa-app.100ms.live&quot;}, &quot;guest&quot;: {&quot;identifier&quot;: &quot;myp-tvc-vyc&quot;, &quot;is_active&quot;: true, &quot;subdomain&quot;: &quot;sahil-conf.qa-app.100ms.live&quot;}, &quot;hls-viewer&quot;: {&quot;identifier&quot;: &quot;hvs-euq-ajr&quot;, &quot;is_active&quot;: true, &quot;subdomain&quot;: &quot;sahil-conf.qa-app.100ms.live&quot;}, &quot;host&quot;: {&quot;identifier&quot;: &quot;onu-zim-lup&quot;, &quot;is_active&quot;: true, &quot;subdomain&quot;: &quot;sahil-conf.qa-app.100ms.live&quot;}}, &quot;metadata&quot;: &quot;{\&quot;headlessConfig\&quot;:{\&quot;hideAudioLevel\&quot;:false,\&quot;hideTileAudioMute\&quot;:false,\&quot;hideTileName\&quot;:true,\&quot;tileOffset\&quot;:0,\&quot;uiMode\&quot;:\&quot;grid\&quot;}}&quot;, &quot;default&quot;: false, &quot;starter_kit_id&quot;: 6, &quot;ts_template_id&quot;: 10, &quot;deployment_url&quot;: null, &quot;icon_url&quot;: null, &quot;user_name&quot;: &quot;sahil&quot;}], &quot;success&quot;: true, &quot;msg&quot;: &quot;apps fetched successfully&quot;, &quot;api_version&quot;: &quot;2.0.181&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call">
+    <div class="step-container" id="0.8.0.call.0.15">
+      <div class="step-ref bg-step">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">18</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call">
+    <div class="step-container" id="0.8.0.call.0.16">
+      <div class="step-ref bg-step">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8.0.call.0.16">21:15:55.076 [print] {
+  &quot;user_name&quot;: &quot;sahil&quot;,
+  &quot;apps&quot;: [
+    {
+      &quot;id&quot;: 2599,
+      &quot;app_type&quot;: &quot;VIDEOCONF&quot;,
+      &quot;app_name&quot;: &quot;conf123&quot;,
+      &quot;subdomain_name&quot;: &quot;sahil-conf123.qa-app.100ms.live&quot;,
+      &quot;room_id&quot;: &quot;tae-mqh-imu&quot;,
+      &quot;logo&quot;: &quot;https://100ms.live/images/100ms-logo.png&quot;,
+      &quot;color&quot;: &quot;#2F80FF&quot;,
+      &quot;font&quot;: &quot;INTER&quot;,
+      &quot;tile_shape&quot;: &quot;SQUARE&quot;,
+      &quot;theme&quot;: &quot;DARK&quot;,
+      &quot;video_off_avatars&quot;: &quot;NONE&quot;,
+      &quot;chat&quot;: true,
+      &quot;screenshare&quot;: true,
+      &quot;annotation&quot;: true,
+      &quot;background&quot;: true,
+      &quot;spotlight&quot;: true,
+      &quot;raise_hand&quot;: true,
+      &quot;google_drive&quot;: true,
+      &quot;youtube&quot;: true,
+      &quot;whiteboard&quot;: true,
+      &quot;policy&quot;: &quot;conf123_videoconf_f41d8e4a-9c41-4c46-98c7-cc9333700eb5&quot;,
+      &quot;policy_id&quot;: &quot;62c456fbe0373c994faad926&quot;,
+      &quot;room_links&quot;: {
+        &quot;guest&quot;: {
+          &quot;identifier&quot;: &quot;ife-ghg-hve&quot;,
+          &quot;is_active&quot;: true,
+          &quot;subdomain&quot;: &quot;sahil-conf123.qa-app.100ms.live&quot;
+        },
+        &quot;host&quot;: {
+          &quot;identifier&quot;: &quot;tae-mqh-imu&quot;,
+          &quot;is_active&quot;: true,
+          &quot;subdomain&quot;: &quot;sahil-conf123.qa-app.100ms.live&quot;
+        }
+      },
+      &quot;metadata&quot;: &quot;&quot;,
+      &quot;default&quot;: false,
+      &quot;starter_kit_id&quot;: 6,
+      &quot;ts_template_id&quot;: 10,
+      &quot;deployment_url&quot;: null,
+      &quot;icon_url&quot;: null,
+      &quot;user_name&quot;: &quot;sahil&quot;
+    },
+    {
+      &quot;id&quot;: 2592,
+      &quot;app_type&quot;: &quot;VIDEOCONF&quot;,
+      &quot;app_name&quot;: &quot;conf&quot;,
+      &quot;subdomain_name&quot;: &quot;sahil-conf.qa-app.100ms.live&quot;,
+      &quot;room_id&quot;: &quot;onu-zim-lup&quot;,
+      &quot;logo&quot;: &quot;https://100ms.live/images/100ms-logo.png&quot;,
+      &quot;color&quot;: &quot;#2F80FF&quot;,
+      &quot;font&quot;: &quot;INTER&quot;,
+      &quot;tile_shape&quot;: &quot;1-1&quot;,
+      &quot;theme&quot;: &quot;DARK&quot;,
+      &quot;video_off_avatars&quot;: &quot;NONE&quot;,
+      &quot;chat&quot;: true,
+      &quot;screenshare&quot;: true,
+      &quot;annotation&quot;: true,
+      &quot;background&quot;: true,
+      &quot;spotlight&quot;: true,
+      &quot;raise_hand&quot;: true,
+      &quot;google_drive&quot;: true,
+      &quot;youtube&quot;: true,
+      &quot;whiteboard&quot;: true,
+      &quot;policy&quot;: &quot;conf_videoconf_89f60ec2-fc60-4471-bffc-13c67284a3b5&quot;,
+      &quot;policy_id&quot;: &quot;62c28a94e0373c994faad923&quot;,
+      &quot;room_links&quot;: {
+        &quot;__internal_recorder&quot;: {
+          &quot;identifier&quot;: &quot;kbr-mqu-hud&quot;,
+          &quot;is_active&quot;: true,
+          &quot;subdomain&quot;: &quot;sahil-conf.qa-app.100ms.live&quot;
+        },
+        &quot;guest&quot;: {
+          &quot;identifier&quot;: &quot;myp-tvc-vyc&quot;,
+          &quot;is_active&quot;: true,
+          &quot;subdomain&quot;: &quot;sahil-conf.qa-app.100ms.live&quot;
+        },
+        &quot;hls-viewer&quot;: {
+          &quot;identifier&quot;: &quot;hvs-euq-ajr&quot;,
+          &quot;is_active&quot;: true,
+          &quot;subdomain&quot;: &quot;sahil-conf.qa-app.100ms.live&quot;
+        },
+        &quot;host&quot;: {
+          &quot;identifier&quot;: &quot;onu-zim-lup&quot;,
+          &quot;is_active&quot;: true,
+          &quot;subdomain&quot;: &quot;sahil-conf.qa-app.100ms.live&quot;
+        }
+      },
+      &quot;metadata&quot;: &quot;{\&quot;headlessConfig\&quot;:{\&quot;hideAudioLevel\&quot;:false,\&quot;hideTileAudioMute\&quot;:false,\&quot;hideTileName\&quot;:true,\&quot;tileOffset\&quot;:0,\&quot;uiMode\&quot;:\&quot;grid\&quot;}}&quot;,
+      &quot;default&quot;: false,
+      &quot;starter_kit_id&quot;: 6,
+      &quot;ts_template_id&quot;: 10,
+      &quot;deployment_url&quot;: null,
+      &quot;icon_url&quot;: null,
+      &quot;user_name&quot;: &quot;sahil&quot;
+    }
+  ],
+  &quot;success&quot;: true,
+  &quot;msg&quot;: &quot;apps fetched successfully&quot;,
+  &quot;api_version&quot;: &quot;2.0.181&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/get-details&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref failed">12</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>param domain = result.apps[0].subdomain_name</span>
+      </div>
+    </div>
+    <div class="time-cell failed">13</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">21:15:55.094 classpath:endpoints/apps/get-details.feature:12
+And param domain = result.apps[0].subdomain_name
+js failed:
+&gt;&gt;&gt;&gt;
+01: result.apps[0].subdomain_name
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: TypeError: Cannot read property &quot;0&quot; from undefined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:endpoints/apps/get-details.feature:12
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref skipped">13</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>param room_id = result.apps[0].room_id</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref skipped">14</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>header authorization = token</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref skipped">15</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref skipped">16</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref skipped">17</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
