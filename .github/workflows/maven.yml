@@ -22,7 +22,7 @@ jobs:
       
     - name: Build with Maven
       run: mvn test -Dtest=TestsRunner
-     -name: rename file
+    - name: rename file
       run: cd target/cucumber-html-reports && mv overview-features.html index.html
       
     - name: Deploy Pages
