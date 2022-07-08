@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>demo</td>
-      <td>08 Jul 2022, 08:48</td>
+      <td>08 Jul 2022, 09:42</td>
     </tr>
   </tbody>
 </table>
@@ -138,7 +138,7 @@ $(document).ready(function() {
           <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="1810793098">1.810</td>
+          <td class="duration" data-value="1924062189">1.924</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -232,7 +232,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">url 'https://qa-in2.100ms.live/hmsapi'</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -250,7 +250,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details">
-        <pre>08:48:10.989 karate.env system property was: null 
+        <pre>09:42:42.651 karate.env system property was: null 
 </pre>
       </div>
     </div>
@@ -270,7 +270,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def tokengenerator = Java.type('utils.TokenGenerator');</span>
 
-  <span class="lead-duration duration">0.007</span>
+  <span class="lead-duration duration">0.009</span>
 
 </div>
 
@@ -297,7 +297,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def token = tokengenerator.getToken();</span>
 
-  <span class="lead-duration duration">0.008</span>
+  <span class="lead-duration duration">0.006</span>
 
 </div>
 
@@ -335,7 +335,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">1.793</span>
+  <span class="lead-duration duration">1.906</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-4">
@@ -378,7 +378,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">path '/rooms'</span>
 
-  <span class="lead-duration duration">0.005</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -457,7 +457,7 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">header authorization = 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2ZXJzaW9uIjoyLCJ0eXBlIjoibWFuYWdlbWVudCIsImFwcF9kYXRhIjpudWxsLCJhY2Nlc3Nfa2V5IjoiNjI4MjJkYjAwNWM2NDg3ZjllNTU2NDU2IiwiZXhwIjoxNjU3MDM0MTE5LCJqdGkiOiI4ZTg4NTRlNS0wYjdkLTQ5ODctYTM1MC01NDExYjk1ZGNhZTMiLCJpYXQiOjE2NTY5OTgxMTksImlzcyI6IjYyODIyZGFmMDVjNjQ4N2Y5ZTU1NjQ1MiIsIm5iZiI6MTY1Njk5ODExOSwic3ViIjoiYXBpIn0.iNsdZ5lRbXHnSxAK4ZJfrXLX8beDVd-WeBv6tjCndPQ'</span>
+  <span class="name">header authorization = token</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -486,7 +486,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
 
-  <span class="lead-duration duration">1.786</span>
+  <span class="lead-duration duration">1.905</span>
 
 </div>
 
@@ -504,26 +504,26 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-6" class="collapse collapsable-details">
-        <pre>08:48:11.481 request:
+        <pre>09:42:43.194 request:
 1 &gt; GET https://qa-in2.100ms.live/hmsapi/rooms?id=62c2ae73b018941974406f46&amp;email=sahil%40100ms.live
-1 &gt; authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2ZXJzaW9uIjoyLCJ0eXBlIjoibWFuYWdlbWVudCIsImFwcF9kYXRhIjpudWxsLCJhY2Nlc3Nfa2V5IjoiNjI4MjJkYjAwNWM2NDg3ZjllNTU2NDU2IiwiZXhwIjoxNjU3MDM0MTE5LCJqdGkiOiI4ZTg4NTRlNS0wYjdkLTQ5ODctYTM1MC01NDExYjk1ZGNhZTMiLCJpYXQiOjE2NTY5OTgxMTksImlzcyI6IjYyODIyZGFmMDVjNjQ4N2Y5ZTU1NjQ1MiIsIm5iZiI6MTY1Njk5ODExOSwic3ViIjoiYXBpIn0.iNsdZ5lRbXHnSxAK4ZJfrXLX8beDVd-WeBv6tjCndPQ
+1 &gt; authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2ZXJzaW9uIjoyLCJ0eXBlIjoibWFuYWdlbWVudCIsImFwcF9kYXRhIjpudWxsLCJhY2Nlc3Nfa2V5IjoiNjJjNjk2YTk4YzllN2Y3Nzk2Y2Q5ZWM2IiwiZXhwIjoxNjY1ODIyMDYzLCJqdGkiOiI3NDU3YWIwMC1iYzdiLTQzMWItYmY0MS04ZmE0ODU2YWQyMjkiLCJpYXQiOjE2NTcxODIwNjMsImlzcyI6IjYyYzY5NmE4OGM5ZTdmNzc5NmNkOWVjMiIsIm5iZiI6MTY1NzE4MjA2Mywic3ViIjoiYXBpIn0.AhP_c5v-m1HZN6yqZ6s3R6Nu23-cfGhBzl2SSlUOp_A
 1 &gt; Host: qa-in2.100ms.live
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_332)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-08:48:12.844 response time in milliseconds: 1362
-1 &lt; 401
+09:42:44.624 response time in milliseconds: 1430
+1 &lt; 403
 1 &lt; server: istio-envoy
-1 &lt; date: Fri, 08 Jul 2022 08:48:12 GMT
+1 &lt; date: Fri, 08 Jul 2022 09:42:44 GMT
 1 &lt; content-type: application/json
 1 &lt; cache-control: no-store
-1 &lt; x-request-id: 2a028f9c-2e9c-4808-b88c-d0d90117c23b
+1 &lt; x-request-id: 1130134f-22f2-4f43-a06d-78594b4efd91
 1 &lt; x-frame-options: SAMEORIGIN
-1 &lt; content-length: 81
+1 &lt; content-length: 78
 1 &lt; vary: Origin
-1 &lt; x-envoy-upstream-service-time: 72
+1 &lt; x-envoy-upstream-service-time: 222
 1 &lt; content-security-policy: frame-ancestors none;
 1 &lt; strict-transport-security: max-age=31536000; includeSubDomains
 1 &lt; x-xss-protection: 1; mode=block
@@ -532,7 +532,7 @@ $(document).ready(function() {
 1 &lt; x-download-options: noopen
 1 &lt; x-dns-prefetch-control: off
 1 &lt; permissions-policy: camera 'none';microphone 'none';geolocation 'none';encrypted-media 'none';payment 'none';speaker 'none';usb 'none';
-{&quot;success&quot;: false, &quot;msg&quot;: &quot;User Authentication Failed&quot;, &quot;api_version&quot;: &quot;2.0.181&quot;}
+{&quot;msg&quot;: &quot;Could not find the room&quot;, &quot;success&quot;: false, &quot;api_version&quot;: &quot;2.0.181&quot;}
 
 </pre>
       </div>
@@ -568,8 +568,8 @@ $(document).ready(function() {
           <a>status</a>
       </div>
       <div id="msg-7" class="collapse collapsable-details  in ">
-        <pre>status code was: 401, expected: 200, response time in milliseconds: 1362, url: https://qa-in2.100ms.live/hmsapi/rooms?id=62c2ae73b018941974406f46&amp;email=sahil%40100ms.live, response: 
-{&quot;success&quot;: false, &quot;msg&quot;: &quot;User Authentication Failed&quot;, &quot;api_version&quot;: &quot;2.0.181&quot;}
+        <pre>status code was: 403, expected: 200, response time in milliseconds: 1430, url: https://qa-in2.100ms.live/hmsapi/rooms?id=62c2ae73b018941974406f46&amp;email=sahil%40100ms.live, response: 
+{&quot;msg&quot;: &quot;Could not find the room&quot;, &quot;success&quot;: false, &quot;api_version&quot;: &quot;2.0.181&quot;}
 classpath:endpoints/rooms/get-rooms.feature:14</pre>
       </div>
     </div>
@@ -584,10 +584,10 @@ classpath:endpoints/rooms/get-rooms.feature:14</pre>
           <a>Doc string</a>
       </div>
       <div id="msg-8" class="collapse collapsable-details">
-        <pre>08:48:12.845 classpath:endpoints/rooms/get-rooms.feature:14
+        <pre>09:42:44.626 classpath:endpoints/rooms/get-rooms.feature:14
 Then status 200
-status code was: 401, expected: 200, response time in milliseconds: 1362, url: https://qa-in2.100ms.live/hmsapi/rooms?id=62c2ae73b018941974406f46&amp;email=sahil%40100ms.live, response: 
-{&quot;success&quot;: false, &quot;msg&quot;: &quot;User Authentication Failed&quot;, &quot;api_version&quot;: &quot;2.0.181&quot;}
+status code was: 403, expected: 200, response time in milliseconds: 1430, url: https://qa-in2.100ms.live/hmsapi/rooms?id=62c2ae73b018941974406f46&amp;email=sahil%40100ms.live, response: 
+{&quot;msg&quot;: &quot;Could not find the room&quot;, &quot;success&quot;: false, &quot;api_version&quot;: &quot;2.0.181&quot;}
 classpath:endpoints/rooms/get-rooms.feature:14
 </pre>
       </div>
