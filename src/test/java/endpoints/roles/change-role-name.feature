@@ -1,10 +1,10 @@
 Feature: update role name
 
   Background:
-    * url 'https://qa-in2.100ms.live/hmsapi'
-    * def tokengenerator = Java.type('utils.TokenGenerator');
-    * def token = tokengenerator.getToken();
-    * def newRoleName = 'new-role-' + tokengenerator.getRandomNumber();
+    * url baseUrl
+    * def utilities = Java.type('utils.Commons');
+    * def token = utilities.getToken(appSecret, appAccessKey);
+    * def newRoleName = 'new-role-' + utilities.getRandomNumber();
     * def sleep = function(millis){ java.lang.Thread.sleep(millis) }
     * def result = call read('create-role.feature')
     * sleep(2000)
