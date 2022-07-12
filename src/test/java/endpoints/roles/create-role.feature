@@ -1,9 +1,9 @@
 Feature: create new role
   Background:
-    * url 'https://qa-in2.100ms.live/hmsapi'
-    * def tokengenerator = Java.type('utils.TokenGenerator');
-    * def token = tokengenerator.getToken();
-    * def roleName = 'new-role-' + tokengenerator.getRandomNumber();
+    * url baseUrl
+    * def utilities = Java.type('utils.Commons');
+    * def token = utilities.getToken(appSecret, appAccessKey);
+    * def roleName = 'new-role-' + utilities.getRandomNumber();
 
   Scenario: get all users and then get the first user by id
     Given path '/roles/create-role/62cd0237ef2402e65ab3d8e3'

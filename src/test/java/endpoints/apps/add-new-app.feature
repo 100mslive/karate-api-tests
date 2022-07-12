@@ -1,10 +1,10 @@
 Feature: add new app
 
   Background:
-    * url 'https://qa-in2.100ms.live/hmsapi'
-    * def tokengenerator = Java.type('utils.TokenGenerator');
-    * def token = tokengenerator.getToken();
-    * def appName = 'automation' + tokengenerator.getRandomNumber();
+    * url baseUrl
+    * def utilities = Java.type('utils.Commons');
+    * def token = utilities.getToken(appSecret, appAccessKey);
+    * def appName = 'automation' + utilities.getRandomNumber();
 
   Scenario: get all users and then get the first user by id
     Given path '/add-new-app'
