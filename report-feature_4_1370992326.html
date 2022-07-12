@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 
 
-<title>Cucumber Reports  - Feature: endpoints/sessions/get-sessions.feature</title>
+<title>Cucumber Reports  - Feature: endpoints/auths/get-auths.feature</title>
 
 </head>
 <body>
@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>demo</td>
-      <td>12 Jul 2022, 05:10</td>
+      <td>12 Jul 2022, 06:27</td>
     </tr>
   </tbody>
 </table>
@@ -126,7 +126,7 @@ $(document).ready(function() {
 
         <tbody>
         <tr>
-          <td class="tagname">endpoints/sessions/get-sessions.feature</td>
+          <td class="tagname">endpoints/auths/get-auths.feature</td>
           <td      class="passed"    >8</td>
           <td >0</td>
           <td >0</td>
@@ -138,7 +138,7 @@ $(document).ready(function() {
           <td >0</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="812909972">0.812</td>
+          <td class="duration" data-value="2150285152">2.150</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -173,12 +173,12 @@ $(document).ready(function() {
 
 <div class="brief passed">
   <span class="keyword indention">Feature</span>
-  <span class="name">endpoints/sessions/get-sessions.feature</span>
+  <span class="name">endpoints/auths/get-auths.feature</span>
 
 
 </div>
 
-        <div class="description indention">get sessions tests</div>
+        <div class="description indention">get auths tests</div>
 
         <div class="elements inner-level">
 
@@ -189,7 +189,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.344</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
@@ -250,7 +250,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details">
-        <pre>05:10:15.060 karate.env system property was: null 
+        <pre>06:26:52.320 karate.env system property was: null 
 </pre>
       </div>
     </div>
@@ -270,7 +270,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def tokengenerator = Java.type('utils.TokenGenerator');</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.014</span>
 
 </div>
 
@@ -297,7 +297,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def token = tokengenerator.getToken();</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.329</span>
 
 </div>
 
@@ -335,7 +335,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.811</span>
+  <span class="lead-duration duration">1.806</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
@@ -376,7 +376,7 @@ $(document).ready(function() {
 
 <div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
-  <span class="name">path '/sessions'</span>
+  <span class="name">path '/auths'</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -405,7 +405,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">header authorization = token</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -432,7 +432,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
 
-  <span class="lead-duration duration">0.805</span>
+  <span class="lead-duration duration">1.795</span>
 
 </div>
 
@@ -450,26 +450,26 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-6" class="collapse collapsable-details">
-        <pre>05:10:15.064 request:
-1 &gt; GET https://qa-in2.100ms.live/hmsapi/sessions
-1 &gt; authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2NTc2MDI2MTUsImFjY2Vzc19rZXkiOiI2MjgyMmRhZjA1YzY0ODdmOWU1NTY0NTUiLCJ0eXBlIjoibWFuYWdlbWVudCIsImV4cCI6MTY1NzY4OTAxNSwidmVyc2lvbiI6MiwiaWF0IjoxNjU3NjAyNTU1LCJqdGkiOiJhYjE2ZjBiYy05MGFmLTRkZDQtYWEwNS0xZGRkY2M1NTM0OWMifQ.V8BtWCfthTONYheZAdk3y4gFHFIb1gSz80cPKComUww
+        <pre>06:26:52.974 request:
+1 &gt; GET https://qa-in2.100ms.live/hmsapi/auths
+1 &gt; authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2NTc2MDcyMTIsImFjY2Vzc19rZXkiOiI2MjgyMmRhZjA1YzY0ODdmOWU1NTY0NTUiLCJ0eXBlIjoibWFuYWdlbWVudCIsImV4cCI6MTY1NzY5MzYxMiwidmVyc2lvbiI6MiwiaWF0IjoxNjU3NjA3MTUyLCJqdGkiOiI0MzQwMDQ2MC03YjBiLTRhYzctODZiYS0wNGQ3ZjY3YTZlNjgifQ.DpibhB97RLCY8gzos5rOMiOjhbD0Tmrkis7TYXwW_Ww
 1 &gt; Host: qa-in2.100ms.live
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_332)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-05:10:15.868 response time in milliseconds: 804
+06:26:54.490 response time in milliseconds: 1511
 1 &lt; 200
 1 &lt; server: istio-envoy
-1 &lt; date: Tue, 12 Jul 2022 05:10:15 GMT
+1 &lt; date: Tue, 12 Jul 2022 06:26:54 GMT
 1 &lt; content-type: application/json
 1 &lt; cache-control: no-store
-1 &lt; x-request-id: a13c032f-ef9e-452d-92ff-9f795d0af041
+1 &lt; x-request-id: 4a1a0b07-3679-4728-b4c1-2a19fea11880
 1 &lt; x-frame-options: SAMEORIGIN
-1 &lt; content-length: 100
+1 &lt; content-length: 1488
 1 &lt; vary: Origin
-1 &lt; x-envoy-upstream-service-time: 38
+1 &lt; x-envoy-upstream-service-time: 217
 1 &lt; content-security-policy: frame-ancestors none;
 1 &lt; strict-transport-security: max-age=31536000; includeSubDomains
 1 &lt; x-xss-protection: 1; mode=block
@@ -478,7 +478,7 @@ $(document).ready(function() {
 1 &lt; x-download-options: noopen
 1 &lt; x-dns-prefetch-control: off
 1 &lt; permissions-policy: camera 'none';microphone 'none';geolocation 'none';encrypted-media 'none';payment 'none';speaker 'none';usb 'none';
-{&quot;success&quot;: false, &quot;msg&quot;: &quot;can only concatenate str (not \&quot;int\&quot;) to str&quot;, &quot;api_version&quot;: &quot;2.0.182&quot;}
+{&quot;limit&quot;: 10, &quot;data&quot;: [{&quot;id&quot;: &quot;62822db005c6487f9e556456&quot;, &quot;access_key&quot;: &quot;62822db005c6487f9e556456&quot;, &quot;user&quot;: &quot;62822daf05c6487f9e556451&quot;, &quot;customer&quot;: &quot;62822daf05c6487f9e556452&quot;, &quot;active&quot;: true, &quot;secret&quot;: &quot;HcunH4BQ5MZ_IOElR32kY1WyKexqRiyhq5KxB6_pGvzBKg-evaOXM2zSiQBriJcLn8F9wt_QFZIReRqVihoTW4Yt1rI35tSRS4uSRs7KluMXaNS6qG86oFXKi9xbT_LKtYcoyubWf5uJdTfyvp3e1EQOfMoZxqzMC-tLuwOOR-c=&quot;, &quot;created_at&quot;: &quot;2022-05-16T10:55:44.279Z&quot;, &quot;updated_at&quot;: &quot;0001-01-01T00:00:00Z&quot;}, {&quot;id&quot;: &quot;62822daf05c6487f9e556455&quot;, &quot;access_key&quot;: &quot;62822daf05c6487f9e556455&quot;, &quot;user&quot;: &quot;62822daf05c6487f9e556451&quot;, &quot;customer&quot;: &quot;62822daf05c6487f9e556452&quot;, &quot;app&quot;: &quot;62822daf05c6487f9e556453&quot;, &quot;active&quot;: true, &quot;secret&quot;: &quot;26nL6KVZ2u3MODHNE4ugxf0mEQA-0t0W-CxOSSAOKFl5Waq0QkH9XGtImbEo9sgM2oe3eerzMrcM8xCfqujK-jIfncwUFt6BabgB49ELmLFnXO35h29mdav9N2d8TCG8r5-5DmGT2wiNDQZDe3NwmM0dp4HCWSiJn9SpIuiUpxc=&quot;, &quot;created_at&quot;: &quot;2022-05-16T10:55:43.772Z&quot;, &quot;updated_at&quot;: &quot;0001-01-01T00:00:00Z&quot;}, {&quot;id&quot;: &quot;62822daf05c6487f9e556454&quot;, &quot;access_key&quot;: &quot;62822daf05c6487f9e556454&quot;, &quot;user&quot;: &quot;62822daf05c6487f9e556451&quot;, &quot;active&quot;: true, &quot;secret&quot;: &quot;8bJ-1oiRqYSh4JdMmQzDSPqzU1pC2kiM9vfz6DKeFxBBBtrnegywFyOjRPJAeRJ00XRYXiGp3odJCxH9AGoDbPL8npMoZFfedbBo9YpI5OjxVXCafRbnvPaRfSL_h-Fw0JKLWfTtPR95uugJDNCR3JaYVxqK8UMRTqPl77l95Xw=&quot;, &quot;created_at&quot;: &quot;2022-05-16T10:55:43.764Z&quot;, &quot;updated_at&quot;: &quot;0001-01-01T00:00:00Z&quot;}], &quot;last&quot;: &quot;62822daf05c6487f9e556454&quot;, &quot;success&quot;: true, &quot;disable_room_role_link&quot;: false, &quot;subdomain&quot;: &quot;sahil-streaming.qa-app.100ms.live&quot;, &quot;api_version&quot;: &quot;2.0.182&quot;}
 
 </pre>
       </div>
@@ -526,7 +526,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">print response</span>
 
-  <span class="lead-duration duration">0.005</span>
+  <span class="lead-duration duration">0.007</span>
 
 </div>
 
@@ -544,9 +544,44 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-7" class="collapse collapsable-details">
-        <pre>05:10:15.872 [print] {
-  &quot;success&quot;: false,
-  &quot;msg&quot;: &quot;can only concatenate str (not \&quot;int\&quot;) to str&quot;,
+        <pre>06:26:54.503 [print] {
+  &quot;limit&quot;: 10,
+  &quot;data&quot;: [
+    {
+      &quot;id&quot;: &quot;62822db005c6487f9e556456&quot;,
+      &quot;access_key&quot;: &quot;62822db005c6487f9e556456&quot;,
+      &quot;user&quot;: &quot;62822daf05c6487f9e556451&quot;,
+      &quot;customer&quot;: &quot;62822daf05c6487f9e556452&quot;,
+      &quot;active&quot;: true,
+      &quot;secret&quot;: &quot;HcunH4BQ5MZ_IOElR32kY1WyKexqRiyhq5KxB6_pGvzBKg-evaOXM2zSiQBriJcLn8F9wt_QFZIReRqVihoTW4Yt1rI35tSRS4uSRs7KluMXaNS6qG86oFXKi9xbT_LKtYcoyubWf5uJdTfyvp3e1EQOfMoZxqzMC-tLuwOOR-c=&quot;,
+      &quot;created_at&quot;: &quot;2022-05-16T10:55:44.279Z&quot;,
+      &quot;updated_at&quot;: &quot;0001-01-01T00:00:00Z&quot;
+    },
+    {
+      &quot;id&quot;: &quot;62822daf05c6487f9e556455&quot;,
+      &quot;access_key&quot;: &quot;62822daf05c6487f9e556455&quot;,
+      &quot;user&quot;: &quot;62822daf05c6487f9e556451&quot;,
+      &quot;customer&quot;: &quot;62822daf05c6487f9e556452&quot;,
+      &quot;app&quot;: &quot;62822daf05c6487f9e556453&quot;,
+      &quot;active&quot;: true,
+      &quot;secret&quot;: &quot;26nL6KVZ2u3MODHNE4ugxf0mEQA-0t0W-CxOSSAOKFl5Waq0QkH9XGtImbEo9sgM2oe3eerzMrcM8xCfqujK-jIfncwUFt6BabgB49ELmLFnXO35h29mdav9N2d8TCG8r5-5DmGT2wiNDQZDe3NwmM0dp4HCWSiJn9SpIuiUpxc=&quot;,
+      &quot;created_at&quot;: &quot;2022-05-16T10:55:43.772Z&quot;,
+      &quot;updated_at&quot;: &quot;0001-01-01T00:00:00Z&quot;
+    },
+    {
+      &quot;id&quot;: &quot;62822daf05c6487f9e556454&quot;,
+      &quot;access_key&quot;: &quot;62822daf05c6487f9e556454&quot;,
+      &quot;user&quot;: &quot;62822daf05c6487f9e556451&quot;,
+      &quot;active&quot;: true,
+      &quot;secret&quot;: &quot;8bJ-1oiRqYSh4JdMmQzDSPqzU1pC2kiM9vfz6DKeFxBBBtrnegywFyOjRPJAeRJ00XRYXiGp3odJCxH9AGoDbPL8npMoZFfedbBo9YpI5OjxVXCafRbnvPaRfSL_h-Fw0JKLWfTtPR95uugJDNCR3JaYVxqK8UMRTqPl77l95Xw=&quot;,
+      &quot;created_at&quot;: &quot;2022-05-16T10:55:43.764Z&quot;,
+      &quot;updated_at&quot;: &quot;0001-01-01T00:00:00Z&quot;
+    }
+  ],
+  &quot;last&quot;: &quot;62822daf05c6487f9e556454&quot;,
+  &quot;success&quot;: true,
+  &quot;disable_room_role_link&quot;: false,
+  &quot;subdomain&quot;: &quot;sahil-streaming.qa-app.100ms.live&quot;,
   &quot;api_version&quot;: &quot;2.0.182&quot;
 }
  

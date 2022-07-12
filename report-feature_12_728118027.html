@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 
 
-<title>Cucumber Reports  - Feature: endpoints/auths/get-auths.feature</title>
+<title>Cucumber Reports  - Feature: endpoints/roles/create-role.feature</title>
 
 </head>
 <body>
@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>demo</td>
-      <td>12 Jul 2022, 05:10</td>
+      <td>12 Jul 2022, 06:27</td>
     </tr>
   </tbody>
 </table>
@@ -126,19 +126,19 @@ $(document).ready(function() {
 
         <tbody>
         <tr>
-          <td class="tagname">endpoints/auths/get-auths.feature</td>
-          <td      class="passed"    >8</td>
+          <td class="tagname">endpoints/roles/create-role.feature</td>
+          <td      class="passed"    >13</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">8</td>
+          <td class="total">13</td>
 
           <td  class="passed"    >1</td>
           <td >0</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="2167786530">2.167</td>
+          <td class="duration" data-value="983420794">0.983</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -173,12 +173,12 @@ $(document).ready(function() {
 
 <div class="brief passed">
   <span class="keyword indention">Feature</span>
-  <span class="name">endpoints/auths/get-auths.feature</span>
+  <span class="name">endpoints/roles/create-role.feature</span>
 
 
 </div>
 
-        <div class="description indention">get auths tests</div>
+        <div class="description indention">create new role</div>
 
         <div class="elements inner-level">
 
@@ -189,7 +189,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.406</span>
+  <span class="lead-duration duration">0.002</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
@@ -250,7 +250,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details">
-        <pre>05:10:12.849 karate.env system property was: null 
+        <pre>06:26:54.512 karate.env system property was: null 
 </pre>
       </div>
     </div>
@@ -270,7 +270,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def tokengenerator = Java.type('utils.TokenGenerator');</span>
 
-  <span class="lead-duration duration">0.003</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -297,7 +297,34 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def token = tokengenerator.getToken();</span>
 
-  <span class="lead-duration duration">0.402</span>
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def roleName = 'new-role-' + tokengenerator.getRandomNumber();</span>
+
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -335,7 +362,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">1.761</span>
+  <span class="lead-duration duration">0.981</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
@@ -376,7 +403,7 @@ $(document).ready(function() {
 
 <div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
-  <span class="name">path '/auths'</span>
+  <span class="name">path '/roles/create-role/62cd0237ef2402e65ab3d8e3'</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -401,9 +428,138 @@ $(document).ready(function() {
       <div class="step">
 
 
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header authorization = token</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def payload = read('../../data/create-role.json')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">replace payload</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>token</td>
+                  <td>value</td>
+              </tr>
+              <tr>
+                  <td>${roleName}</td>
+                  <td>roleName</td>
+              </tr>
+          </table>
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print payload</span>
+
+  <span class="lead-duration duration">0.007</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>06:26:54.525 [print] {&quot;roleInfo&quot;:{&quot;role&quot;:&quot;new-role-49002&quot;,&quot;permissions&quot;:{&quot;mute&quot;:false,&quot;unmute&quot;:false,&quot;removeOthers&quot;:false,&quot;endRoom&quot;:false,&quot;changeRole&quot;:false,&quot;lockRoom&quot;:false,&quot;sendRoomState&quot;:false},&quot;subscribeDegradation&quot;:true,&quot;priority&quot;:1,&quot;chat&quot;:{&quot;privateMessage&quot;:[]},&quot;screenshare&quot;:{&quot;permissions&quot;:[]},&quot;annotation&quot;:{&quot;permissions&quot;:[]},&quot;virtualBackgrounds&quot;:{&quot;set&quot;:true,&quot;upload&quot;:false},&quot;spotlight&quot;:{&quot;permissions&quot;:[]},&quot;raiseHand&quot;:{&quot;raiseOwn&quot;:false,&quot;lowerOthers&quot;:true},&quot;googleDrive&quot;:{&quot;permissions&quot;:[]},&quot;youtube&quot;:{&quot;permissions&quot;:[]},&quot;advancedSettings&quot;:{&quot;publish&quot;:{&quot;audio&quot;:true,&quot;video&quot;:true,&quot;screenshare&quot;:true,&quot;params&quot;:{&quot;video&quot;:{&quot;bitRate&quot;:300,&quot;frameRate&quot;:30,&quot;codec&quot;:&quot;vp8&quot;},&quot;screenshare&quot;:{&quot;bitRate&quot;:null,&quot;frameRate&quot;:10,&quot;codec&quot;:&quot;vp8&quot;}}},&quot;subscribe&quot;:{&quot;to&quot;:[]}},&quot;video_quality&quot;:&quot;_360p&quot;,&quot;screenshare_quality&quot;:&quot;_1080p&quot;,&quot;default&quot;:false,&quot;video_aspect_ratio&quot;:&quot;4:3&quot;}} 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">header authorization = token</span>
+  <span class="name">request payload</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -430,9 +586,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">method get</span>
+  <span class="name">method post</span>
 
-  <span class="lead-duration duration">1.758</span>
+  <span class="lead-duration duration">0.970</span>
 
 </div>
 
@@ -446,30 +602,32 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
           <a>Doc string</a>
       </div>
-      <div id="msg-6" class="collapse collapsable-details">
-        <pre>05:10:13.564 request:
-1 &gt; GET https://qa-in2.100ms.live/hmsapi/auths
-1 &gt; authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2NTc2MDI2MTMsImFjY2Vzc19rZXkiOiI2MjgyMmRhZjA1YzY0ODdmOWU1NTY0NTUiLCJ0eXBlIjoibWFuYWdlbWVudCIsImV4cCI6MTY1NzY4OTAxMywidmVyc2lvbiI6MiwiaWF0IjoxNjU3NjAyNTUzLCJqdGkiOiJhODI4NTUwNS02ZWY1LTRjZDMtOGEyOS0yZTk2YTk5M2MwNGEifQ.BXE2zQ1MK1zIrdzDqI6rIKY51jXl7k6xirSOAO-IVaw
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>06:26:54.528 request:
+1 &gt; POST https://qa-in2.100ms.live/hmsapi/roles/create-role/62cd0237ef2402e65ab3d8e3
+1 &gt; authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2NTc2MDcyMTQsImFjY2Vzc19rZXkiOiI2MjgyMmRhZjA1YzY0ODdmOWU1NTY0NTUiLCJ0eXBlIjoibWFuYWdlbWVudCIsImV4cCI6MTY1NzY5MzYxNCwidmVyc2lvbiI6MiwiaWF0IjoxNjU3NjA3MTU0LCJqdGkiOiI2MzA0ZjBmNy04N2QxLTQ5ZDMtYjZiMy1iMzMzNjdlZDAwYzkifQ.VXIu4qZdvwJLvXhNS1RSOvzUidaIww4cxP6uniTQ7gE
+1 &gt; Content-Type: text/plain; charset=UTF-8
+1 &gt; Content-Length: 826
 1 &gt; Host: qa-in2.100ms.live
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_332)
 1 &gt; Accept-Encoding: gzip,deflate
+{&quot;roleInfo&quot;:{&quot;role&quot;:&quot;new-role-49002&quot;,&quot;permissions&quot;:{&quot;mute&quot;:false,&quot;unmute&quot;:false,&quot;removeOthers&quot;:false,&quot;endRoom&quot;:false,&quot;changeRole&quot;:false,&quot;lockRoom&quot;:false,&quot;sendRoomState&quot;:false},&quot;subscribeDegradation&quot;:true,&quot;priority&quot;:1,&quot;chat&quot;:{&quot;privateMessage&quot;:[]},&quot;screenshare&quot;:{&quot;permissions&quot;:[]},&quot;annotation&quot;:{&quot;permissions&quot;:[]},&quot;virtualBackgrounds&quot;:{&quot;set&quot;:true,&quot;upload&quot;:false},&quot;spotlight&quot;:{&quot;permissions&quot;:[]},&quot;raiseHand&quot;:{&quot;raiseOwn&quot;:false,&quot;lowerOthers&quot;:true},&quot;googleDrive&quot;:{&quot;permissions&quot;:[]},&quot;youtube&quot;:{&quot;permissions&quot;:[]},&quot;advancedSettings&quot;:{&quot;publish&quot;:{&quot;audio&quot;:true,&quot;video&quot;:true,&quot;screenshare&quot;:true,&quot;params&quot;:{&quot;video&quot;:{&quot;bitRate&quot;:300,&quot;frameRate&quot;:30,&quot;codec&quot;:&quot;vp8&quot;},&quot;screenshare&quot;:{&quot;bitRate&quot;:null,&quot;frameRate&quot;:10,&quot;codec&quot;:&quot;vp8&quot;}}},&quot;subscribe&quot;:{&quot;to&quot;:[]}},&quot;video_quality&quot;:&quot;_360p&quot;,&quot;screenshare_quality&quot;:&quot;_1080p&quot;,&quot;default&quot;:false,&quot;video_aspect_ratio&quot;:&quot;4:3&quot;}}
 
-
-05:10:15.048 response time in milliseconds: 1481
+06:26:55.496 response time in milliseconds: 967
 1 &lt; 200
 1 &lt; server: istio-envoy
-1 &lt; date: Tue, 12 Jul 2022 05:10:14 GMT
+1 &lt; date: Tue, 12 Jul 2022 06:26:55 GMT
 1 &lt; content-type: application/json
 1 &lt; cache-control: no-store
-1 &lt; x-request-id: 7277fca7-c96d-47c6-beaf-49493a71fe48
+1 &lt; x-request-id: 5396da9e-34d1-4b4a-9d12-711cbf3a857f
 1 &lt; x-frame-options: SAMEORIGIN
-1 &lt; content-length: 1488
+1 &lt; content-length: 948
 1 &lt; vary: Origin
-1 &lt; x-envoy-upstream-service-time: 193
+1 &lt; x-envoy-upstream-service-time: 210
 1 &lt; content-security-policy: frame-ancestors none;
 1 &lt; strict-transport-security: max-age=31536000; includeSubDomains
 1 &lt; x-xss-protection: 1; mode=block
@@ -478,7 +636,7 @@ $(document).ready(function() {
 1 &lt; x-download-options: noopen
 1 &lt; x-dns-prefetch-control: off
 1 &lt; permissions-policy: camera 'none';microphone 'none';geolocation 'none';encrypted-media 'none';payment 'none';speaker 'none';usb 'none';
-{&quot;limit&quot;: 10, &quot;data&quot;: [{&quot;id&quot;: &quot;62822db005c6487f9e556456&quot;, &quot;access_key&quot;: &quot;62822db005c6487f9e556456&quot;, &quot;user&quot;: &quot;62822daf05c6487f9e556451&quot;, &quot;customer&quot;: &quot;62822daf05c6487f9e556452&quot;, &quot;active&quot;: true, &quot;secret&quot;: &quot;HcunH4BQ5MZ_IOElR32kY1WyKexqRiyhq5KxB6_pGvzBKg-evaOXM2zSiQBriJcLn8F9wt_QFZIReRqVihoTW4Yt1rI35tSRS4uSRs7KluMXaNS6qG86oFXKi9xbT_LKtYcoyubWf5uJdTfyvp3e1EQOfMoZxqzMC-tLuwOOR-c=&quot;, &quot;created_at&quot;: &quot;2022-05-16T10:55:44.279Z&quot;, &quot;updated_at&quot;: &quot;0001-01-01T00:00:00Z&quot;}, {&quot;id&quot;: &quot;62822daf05c6487f9e556455&quot;, &quot;access_key&quot;: &quot;62822daf05c6487f9e556455&quot;, &quot;user&quot;: &quot;62822daf05c6487f9e556451&quot;, &quot;customer&quot;: &quot;62822daf05c6487f9e556452&quot;, &quot;app&quot;: &quot;62822daf05c6487f9e556453&quot;, &quot;active&quot;: true, &quot;secret&quot;: &quot;26nL6KVZ2u3MODHNE4ugxf0mEQA-0t0W-CxOSSAOKFl5Waq0QkH9XGtImbEo9sgM2oe3eerzMrcM8xCfqujK-jIfncwUFt6BabgB49ELmLFnXO35h29mdav9N2d8TCG8r5-5DmGT2wiNDQZDe3NwmM0dp4HCWSiJn9SpIuiUpxc=&quot;, &quot;created_at&quot;: &quot;2022-05-16T10:55:43.772Z&quot;, &quot;updated_at&quot;: &quot;0001-01-01T00:00:00Z&quot;}, {&quot;id&quot;: &quot;62822daf05c6487f9e556454&quot;, &quot;access_key&quot;: &quot;62822daf05c6487f9e556454&quot;, &quot;user&quot;: &quot;62822daf05c6487f9e556451&quot;, &quot;active&quot;: true, &quot;secret&quot;: &quot;8bJ-1oiRqYSh4JdMmQzDSPqzU1pC2kiM9vfz6DKeFxBBBtrnegywFyOjRPJAeRJ00XRYXiGp3odJCxH9AGoDbPL8npMoZFfedbBo9YpI5OjxVXCafRbnvPaRfSL_h-Fw0JKLWfTtPR95uugJDNCR3JaYVxqK8UMRTqPl77l95Xw=&quot;, &quot;created_at&quot;: &quot;2022-05-16T10:55:43.764Z&quot;, &quot;updated_at&quot;: &quot;0001-01-01T00:00:00Z&quot;}], &quot;last&quot;: &quot;62822daf05c6487f9e556454&quot;, &quot;success&quot;: true, &quot;disable_room_role_link&quot;: false, &quot;subdomain&quot;: &quot;sahil-streaming.qa-app.100ms.live&quot;, &quot;api_version&quot;: &quot;2.0.182&quot;}
+{&quot;success&quot;: true, &quot;data&quot;: {&quot;role&quot;: &quot;new-role-49002&quot;, &quot;permissions&quot;: {&quot;mute&quot;: false, &quot;unmute&quot;: false, &quot;removeOthers&quot;: false, &quot;endRoom&quot;: false, &quot;changeRole&quot;: false, &quot;lockRoom&quot;: false, &quot;sendRoomState&quot;: false}, &quot;subscribeDegradation&quot;: true, &quot;priority&quot;: 1, &quot;chat&quot;: {&quot;privateMessage&quot;: []}, &quot;screenshare&quot;: {&quot;permissions&quot;: []}, &quot;annotation&quot;: {&quot;permissions&quot;: []}, &quot;virtualBackgrounds&quot;: {&quot;set&quot;: true, &quot;upload&quot;: false}, &quot;spotlight&quot;: {&quot;permissions&quot;: []}, &quot;raiseHand&quot;: {&quot;raiseOwn&quot;: false, &quot;lowerOthers&quot;: true}, &quot;googleDrive&quot;: {&quot;permissions&quot;: []}, &quot;youtube&quot;: {&quot;permissions&quot;: []}, &quot;advancedSettings&quot;: {&quot;publish&quot;: {&quot;audio&quot;: true, &quot;video&quot;: true, &quot;screenshare&quot;: true, &quot;params&quot;: {&quot;video&quot;: {&quot;bitRate&quot;: 300, &quot;frameRate&quot;: 30, &quot;codec&quot;: &quot;vp8&quot;}, &quot;screenshare&quot;: {&quot;bitRate&quot;: null, &quot;frameRate&quot;: 10, &quot;codec&quot;: &quot;vp8&quot;}}}, &quot;subscribe&quot;: {&quot;to&quot;: []}}, &quot;video_quality&quot;: &quot;_360p&quot;, &quot;screenshare_quality&quot;: &quot;_1080p&quot;, &quot;default&quot;: false, &quot;video_aspect_ratio&quot;: &quot;4:3&quot;}, &quot;api_version&quot;: &quot;2.0.182&quot;}
 
 </pre>
       </div>
@@ -526,7 +684,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">print response</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -540,48 +698,85 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
           <a>Doc string</a>
       </div>
-      <div id="msg-7" class="collapse collapsable-details">
-        <pre>05:10:15.052 [print] {
-  &quot;limit&quot;: 10,
-  &quot;data&quot;: [
-    {
-      &quot;id&quot;: &quot;62822db005c6487f9e556456&quot;,
-      &quot;access_key&quot;: &quot;62822db005c6487f9e556456&quot;,
-      &quot;user&quot;: &quot;62822daf05c6487f9e556451&quot;,
-      &quot;customer&quot;: &quot;62822daf05c6487f9e556452&quot;,
-      &quot;active&quot;: true,
-      &quot;secret&quot;: &quot;HcunH4BQ5MZ_IOElR32kY1WyKexqRiyhq5KxB6_pGvzBKg-evaOXM2zSiQBriJcLn8F9wt_QFZIReRqVihoTW4Yt1rI35tSRS4uSRs7KluMXaNS6qG86oFXKi9xbT_LKtYcoyubWf5uJdTfyvp3e1EQOfMoZxqzMC-tLuwOOR-c=&quot;,
-      &quot;created_at&quot;: &quot;2022-05-16T10:55:44.279Z&quot;,
-      &quot;updated_at&quot;: &quot;0001-01-01T00:00:00Z&quot;
-    },
-    {
-      &quot;id&quot;: &quot;62822daf05c6487f9e556455&quot;,
-      &quot;access_key&quot;: &quot;62822daf05c6487f9e556455&quot;,
-      &quot;user&quot;: &quot;62822daf05c6487f9e556451&quot;,
-      &quot;customer&quot;: &quot;62822daf05c6487f9e556452&quot;,
-      &quot;app&quot;: &quot;62822daf05c6487f9e556453&quot;,
-      &quot;active&quot;: true,
-      &quot;secret&quot;: &quot;26nL6KVZ2u3MODHNE4ugxf0mEQA-0t0W-CxOSSAOKFl5Waq0QkH9XGtImbEo9sgM2oe3eerzMrcM8xCfqujK-jIfncwUFt6BabgB49ELmLFnXO35h29mdav9N2d8TCG8r5-5DmGT2wiNDQZDe3NwmM0dp4HCWSiJn9SpIuiUpxc=&quot;,
-      &quot;created_at&quot;: &quot;2022-05-16T10:55:43.772Z&quot;,
-      &quot;updated_at&quot;: &quot;0001-01-01T00:00:00Z&quot;
-    },
-    {
-      &quot;id&quot;: &quot;62822daf05c6487f9e556454&quot;,
-      &quot;access_key&quot;: &quot;62822daf05c6487f9e556454&quot;,
-      &quot;user&quot;: &quot;62822daf05c6487f9e556451&quot;,
-      &quot;active&quot;: true,
-      &quot;secret&quot;: &quot;8bJ-1oiRqYSh4JdMmQzDSPqzU1pC2kiM9vfz6DKeFxBBBtrnegywFyOjRPJAeRJ00XRYXiGp3odJCxH9AGoDbPL8npMoZFfedbBo9YpI5OjxVXCafRbnvPaRfSL_h-Fw0JKLWfTtPR95uugJDNCR3JaYVxqK8UMRTqPl77l95Xw=&quot;,
-      &quot;created_at&quot;: &quot;2022-05-16T10:55:43.764Z&quot;,
-      &quot;updated_at&quot;: &quot;0001-01-01T00:00:00Z&quot;
-    }
-  ],
-  &quot;last&quot;: &quot;62822daf05c6487f9e556454&quot;,
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>06:26:55.497 [print] {
   &quot;success&quot;: true,
-  &quot;disable_room_role_link&quot;: false,
-  &quot;subdomain&quot;: &quot;sahil-streaming.qa-app.100ms.live&quot;,
+  &quot;data&quot;: {
+    &quot;role&quot;: &quot;new-role-49002&quot;,
+    &quot;permissions&quot;: {
+      &quot;mute&quot;: false,
+      &quot;unmute&quot;: false,
+      &quot;removeOthers&quot;: false,
+      &quot;endRoom&quot;: false,
+      &quot;changeRole&quot;: false,
+      &quot;lockRoom&quot;: false,
+      &quot;sendRoomState&quot;: false
+    },
+    &quot;subscribeDegradation&quot;: true,
+    &quot;priority&quot;: 1,
+    &quot;chat&quot;: {
+      &quot;privateMessage&quot;: [
+      ]
+    },
+    &quot;screenshare&quot;: {
+      &quot;permissions&quot;: [
+      ]
+    },
+    &quot;annotation&quot;: {
+      &quot;permissions&quot;: [
+      ]
+    },
+    &quot;virtualBackgrounds&quot;: {
+      &quot;set&quot;: true,
+      &quot;upload&quot;: false
+    },
+    &quot;spotlight&quot;: {
+      &quot;permissions&quot;: [
+      ]
+    },
+    &quot;raiseHand&quot;: {
+      &quot;raiseOwn&quot;: false,
+      &quot;lowerOthers&quot;: true
+    },
+    &quot;googleDrive&quot;: {
+      &quot;permissions&quot;: [
+      ]
+    },
+    &quot;youtube&quot;: {
+      &quot;permissions&quot;: [
+      ]
+    },
+    &quot;advancedSettings&quot;: {
+      &quot;publish&quot;: {
+        &quot;audio&quot;: true,
+        &quot;video&quot;: true,
+        &quot;screenshare&quot;: true,
+        &quot;params&quot;: {
+          &quot;video&quot;: {
+            &quot;bitRate&quot;: 300,
+            &quot;frameRate&quot;: 30,
+            &quot;codec&quot;: &quot;vp8&quot;
+          },
+          &quot;screenshare&quot;: {
+            &quot;bitRate&quot;: null,
+            &quot;frameRate&quot;: 10,
+            &quot;codec&quot;: &quot;vp8&quot;
+          }
+        }
+      },
+      &quot;subscribe&quot;: {
+        &quot;to&quot;: [
+        ]
+      }
+    },
+    &quot;video_quality&quot;: &quot;_360p&quot;,
+    &quot;screenshare_quality&quot;: &quot;_1080p&quot;,
+    &quot;default&quot;: false,
+    &quot;video_aspect_ratio&quot;: &quot;4:3&quot;
+  },
   &quot;api_version&quot;: &quot;2.0.182&quot;
 }
  

@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: endpoints/roles/delete-role.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>demo</td>
+      <td>12 Jul 2022, 06:27</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">endpoints/roles/delete-role.feature</td>
+          <td      class="passed"    >28</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">28</td>
+
+          <td  class="passed"    >1</td>
+          <td >0</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="7679384815">7.679</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+</div>
+
+
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">endpoints/roles/delete-role.feature</span>
+
+
+</div>
+
+        <div class="description indention">delete role name</div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">5.892</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url 'https://qa-in2.100ms.live/hmsapi'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>06:26:54.996 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def tokengenerator = Java.type('utils.TokenGenerator');</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def token = tokengenerator.getToken();</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def newRoleName = 'new-role-' + tokengenerator.getRandomNumber();</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def sleep = function(millis){ java.lang.Thread.sleep(millis) }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def result = call read('create-role.feature')</span>
+
+  <span class="lead-duration duration">1.947</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">endpoints/roles/create-role.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url 'https://qa-in2.100ms.live/hmsapi'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def tokengenerator = Java.type('utils.TokenGenerator');</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def token = tokengenerator.getToken();</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def roleName = 'new-role-' + tokengenerator.getRandomNumber();</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path '/roles/create-role/62cd0237ef2402e65ab3d8e3'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">header authorization = token</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def payload = read('../../data/create-role.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">replace payload</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>token</td>
+                  <td>value</td>
+              </tr>
+              <tr>
+                  <td>${roleName}</td>
+                  <td>roleName</td>
+              </tr>
+          </table>
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print payload</span>
+
+  <span class="lead-duration duration">0.009</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>06:26:55.018 [print] {&quot;roleInfo&quot;:{&quot;role&quot;:&quot;new-role-51552&quot;,&quot;permissions&quot;:{&quot;mute&quot;:false,&quot;unmute&quot;:false,&quot;removeOthers&quot;:false,&quot;endRoom&quot;:false,&quot;changeRole&quot;:false,&quot;lockRoom&quot;:false,&quot;sendRoomState&quot;:false},&quot;subscribeDegradation&quot;:true,&quot;priority&quot;:1,&quot;chat&quot;:{&quot;privateMessage&quot;:[]},&quot;screenshare&quot;:{&quot;permissions&quot;:[]},&quot;annotation&quot;:{&quot;permissions&quot;:[]},&quot;virtualBackgrounds&quot;:{&quot;set&quot;:true,&quot;upload&quot;:false},&quot;spotlight&quot;:{&quot;permissions&quot;:[]},&quot;raiseHand&quot;:{&quot;raiseOwn&quot;:false,&quot;lowerOthers&quot;:true},&quot;googleDrive&quot;:{&quot;permissions&quot;:[]},&quot;youtube&quot;:{&quot;permissions&quot;:[]},&quot;advancedSettings&quot;:{&quot;publish&quot;:{&quot;audio&quot;:true,&quot;video&quot;:true,&quot;screenshare&quot;:true,&quot;params&quot;:{&quot;video&quot;:{&quot;bitRate&quot;:300,&quot;frameRate&quot;:30,&quot;codec&quot;:&quot;vp8&quot;},&quot;screenshare&quot;:{&quot;bitRate&quot;:null,&quot;frameRate&quot;:10,&quot;codec&quot;:&quot;vp8&quot;}}},&quot;subscribe&quot;:{&quot;to&quot;:[]}},&quot;video_quality&quot;:&quot;_360p&quot;,&quot;screenshare_quality&quot;:&quot;_1080p&quot;,&quot;default&quot;:false,&quot;video_aspect_ratio&quot;:&quot;4:3&quot;}} 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request payload</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">1.927</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>06:26:55.020 request:
+1 &gt; POST https://qa-in2.100ms.live/hmsapi/roles/create-role/62cd0237ef2402e65ab3d8e3
+1 &gt; authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2NTc2MDcyMTUsImFjY2Vzc19rZXkiOiI2MjgyMmRhZjA1YzY0ODdmOWU1NTY0NTUiLCJ0eXBlIjoibWFuYWdlbWVudCIsImV4cCI6MTY1NzY5MzYxNSwidmVyc2lvbiI6MiwiaWF0IjoxNjU3NjA3MTU1LCJqdGkiOiJlMGJhOTdiNy1lZDk4LTRhNTMtYTcxYS0xYmQxNzc0ZmU3MzkifQ.FU90qbAAy4oDvsckpVefg0ue8z88xP2u0wwpvs2j0po
+1 &gt; Content-Type: text/plain; charset=UTF-8
+1 &gt; Content-Length: 826
+1 &gt; Host: qa-in2.100ms.live
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_332)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;roleInfo&quot;:{&quot;role&quot;:&quot;new-role-51552&quot;,&quot;permissions&quot;:{&quot;mute&quot;:false,&quot;unmute&quot;:false,&quot;removeOthers&quot;:false,&quot;endRoom&quot;:false,&quot;changeRole&quot;:false,&quot;lockRoom&quot;:false,&quot;sendRoomState&quot;:false},&quot;subscribeDegradation&quot;:true,&quot;priority&quot;:1,&quot;chat&quot;:{&quot;privateMessage&quot;:[]},&quot;screenshare&quot;:{&quot;permissions&quot;:[]},&quot;annotation&quot;:{&quot;permissions&quot;:[]},&quot;virtualBackgrounds&quot;:{&quot;set&quot;:true,&quot;upload&quot;:false},&quot;spotlight&quot;:{&quot;permissions&quot;:[]},&quot;raiseHand&quot;:{&quot;raiseOwn&quot;:false,&quot;lowerOthers&quot;:true},&quot;googleDrive&quot;:{&quot;permissions&quot;:[]},&quot;youtube&quot;:{&quot;permissions&quot;:[]},&quot;advancedSettings&quot;:{&quot;publish&quot;:{&quot;audio&quot;:true,&quot;video&quot;:true,&quot;screenshare&quot;:true,&quot;params&quot;:{&quot;video&quot;:{&quot;bitRate&quot;:300,&quot;frameRate&quot;:30,&quot;codec&quot;:&quot;vp8&quot;},&quot;screenshare&quot;:{&quot;bitRate&quot;:null,&quot;frameRate&quot;:10,&quot;codec&quot;:&quot;vp8&quot;}}},&quot;subscribe&quot;:{&quot;to&quot;:[]}},&quot;video_quality&quot;:&quot;_360p&quot;,&quot;screenshare_quality&quot;:&quot;_1080p&quot;,&quot;default&quot;:false,&quot;video_aspect_ratio&quot;:&quot;4:3&quot;}}
+
+06:26:56.946 response time in milliseconds: 1925
+1 &lt; 200
+1 &lt; server: istio-envoy
+1 &lt; date: Tue, 12 Jul 2022 06:26:56 GMT
+1 &lt; content-type: application/json
+1 &lt; cache-control: no-store
+1 &lt; x-request-id: 7e5dda8e-f633-4dd2-9409-0fea50990913
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; content-length: 948
+1 &lt; vary: Origin
+1 &lt; x-envoy-upstream-service-time: 1172
+1 &lt; content-security-policy: frame-ancestors none;
+1 &lt; strict-transport-security: max-age=31536000; includeSubDomains
+1 &lt; x-xss-protection: 1; mode=block
+1 &lt; x-content-type-options: nosniff
+1 &lt; referrer-policy: no-referrer
+1 &lt; x-download-options: noopen
+1 &lt; x-dns-prefetch-control: off
+1 &lt; permissions-policy: camera 'none';microphone 'none';geolocation 'none';encrypted-media 'none';payment 'none';speaker 'none';usb 'none';
+{&quot;success&quot;: true, &quot;data&quot;: {&quot;role&quot;: &quot;new-role-51552&quot;, &quot;permissions&quot;: {&quot;mute&quot;: false, &quot;unmute&quot;: false, &quot;removeOthers&quot;: false, &quot;endRoom&quot;: false, &quot;changeRole&quot;: false, &quot;lockRoom&quot;: false, &quot;sendRoomState&quot;: false}, &quot;subscribeDegradation&quot;: true, &quot;priority&quot;: 1, &quot;chat&quot;: {&quot;privateMessage&quot;: []}, &quot;screenshare&quot;: {&quot;permissions&quot;: []}, &quot;annotation&quot;: {&quot;permissions&quot;: []}, &quot;virtualBackgrounds&quot;: {&quot;set&quot;: true, &quot;upload&quot;: false}, &quot;spotlight&quot;: {&quot;permissions&quot;: []}, &quot;raiseHand&quot;: {&quot;raiseOwn&quot;: false, &quot;lowerOthers&quot;: true}, &quot;googleDrive&quot;: {&quot;permissions&quot;: []}, &quot;youtube&quot;: {&quot;permissions&quot;: []}, &quot;advancedSettings&quot;: {&quot;publish&quot;: {&quot;audio&quot;: true, &quot;video&quot;: true, &quot;screenshare&quot;: true, &quot;params&quot;: {&quot;video&quot;: {&quot;bitRate&quot;: 300, &quot;frameRate&quot;: 30, &quot;codec&quot;: &quot;vp8&quot;}, &quot;screenshare&quot;: {&quot;bitRate&quot;: null, &quot;frameRate&quot;: 10, &quot;codec&quot;: &quot;vp8&quot;}}}, &quot;subscribe&quot;: {&quot;to&quot;: []}}, &quot;video_quality&quot;: &quot;_360p&quot;, &quot;screenshare_quality&quot;: &quot;_1080p&quot;, &quot;default&quot;: false, &quot;video_aspect_ratio&quot;: &quot;4:3&quot;}, &quot;api_version&quot;: &quot;2.0.182&quot;}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>06:26:56.947 [print] {
+  &quot;success&quot;: true,
+  &quot;data&quot;: {
+    &quot;role&quot;: &quot;new-role-51552&quot;,
+    &quot;permissions&quot;: {
+      &quot;mute&quot;: false,
+      &quot;unmute&quot;: false,
+      &quot;removeOthers&quot;: false,
+      &quot;endRoom&quot;: false,
+      &quot;changeRole&quot;: false,
+      &quot;lockRoom&quot;: false,
+      &quot;sendRoomState&quot;: false
+    },
+    &quot;subscribeDegradation&quot;: true,
+    &quot;priority&quot;: 1,
+    &quot;chat&quot;: {
+      &quot;privateMessage&quot;: [
+      ]
+    },
+    &quot;screenshare&quot;: {
+      &quot;permissions&quot;: [
+      ]
+    },
+    &quot;annotation&quot;: {
+      &quot;permissions&quot;: [
+      ]
+    },
+    &quot;virtualBackgrounds&quot;: {
+      &quot;set&quot;: true,
+      &quot;upload&quot;: false
+    },
+    &quot;spotlight&quot;: {
+      &quot;permissions&quot;: [
+      ]
+    },
+    &quot;raiseHand&quot;: {
+      &quot;raiseOwn&quot;: false,
+      &quot;lowerOthers&quot;: true
+    },
+    &quot;googleDrive&quot;: {
+      &quot;permissions&quot;: [
+      ]
+    },
+    &quot;youtube&quot;: {
+      &quot;permissions&quot;: [
+      ]
+    },
+    &quot;advancedSettings&quot;: {
+      &quot;publish&quot;: {
+        &quot;audio&quot;: true,
+        &quot;video&quot;: true,
+        &quot;screenshare&quot;: true,
+        &quot;params&quot;: {
+          &quot;video&quot;: {
+            &quot;bitRate&quot;: 300,
+            &quot;frameRate&quot;: 30,
+            &quot;codec&quot;: &quot;vp8&quot;
+          },
+          &quot;screenshare&quot;: {
+            &quot;bitRate&quot;: null,
+            &quot;frameRate&quot;: 10,
+            &quot;codec&quot;: &quot;vp8&quot;
+          }
+        }
+      },
+      &quot;subscribe&quot;: {
+        &quot;to&quot;: [
+        ]
+      }
+    },
+    &quot;video_quality&quot;: &quot;_360p&quot;,
+    &quot;screenshare_quality&quot;: &quot;_1080p&quot;,
+    &quot;default&quot;: false,
+    &quot;video_aspect_ratio&quot;: &quot;4:3&quot;
+  },
+  &quot;api_version&quot;: &quot;2.0.182&quot;
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">sleep(2000)</span>
+
+  <span class="lead-duration duration">2.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">1.786</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">update role name</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-7" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-8" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/roles/delete-role/62cd0237ef2402e65ab3d8e3'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def role_name =  result.response.data.role</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header authorization = token</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request {role: '#(role_name)'}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">1.784</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>06:26:58.952 request:
+2 &gt; POST https://qa-in2.100ms.live/hmsapi/roles/delete-role/62cd0237ef2402e65ab3d8e3
+2 &gt; authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2NTc2MDcyMTQsImFjY2Vzc19rZXkiOiI2MjgyMmRhZjA1YzY0ODdmOWU1NTY0NTUiLCJ0eXBlIjoibWFuYWdlbWVudCIsImV4cCI6MTY1NzY5MzYxNCwidmVyc2lvbiI6MiwiaWF0IjoxNjU3NjA3MTU0LCJqdGkiOiJlYzExYjdmYS1jZDlmLTQwZmEtOWI0OC05M2RiZTVjZmMwYmUifQ.cM2cH--onKSeE3qFa3d1XtssSuHSaEFdV5wGftF42hU
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 25
+2 &gt; Host: qa-in2.100ms.live
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_332)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;role&quot;:&quot;new-role-51552&quot;}
+
+06:27:00.734 response time in milliseconds: 1782
+2 &lt; 200
+2 &lt; server: istio-envoy
+2 &lt; date: Tue, 12 Jul 2022 06:27:00 GMT
+2 &lt; content-type: application/json
+2 &lt; cache-control: no-store
+2 &lt; x-request-id: 871fc8cb-9644-4683-a57f-539e97a6fc45
+2 &lt; x-frame-options: SAMEORIGIN
+2 &lt; content-length: 79
+2 &lt; vary: Origin
+2 &lt; x-envoy-upstream-service-time: 1020
+2 &lt; content-security-policy: frame-ancestors none;
+2 &lt; strict-transport-security: max-age=31536000; includeSubDomains
+2 &lt; x-xss-protection: 1; mode=block
+2 &lt; x-content-type-options: nosniff
+2 &lt; referrer-policy: no-referrer
+2 &lt; x-download-options: noopen
+2 &lt; x-dns-prefetch-control: off
+2 &lt; permissions-policy: camera 'none';microphone 'none';geolocation 'none';encrypted-media 'none';payment 'none';speaker 'none';usb 'none';
+{&quot;success&quot;: true, &quot;msg&quot;: &quot;Role deleted successfully&quot;, &quot;api_version&quot;: &quot;2.0.182&quot;}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.msg == 'Role deleted successfully'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
