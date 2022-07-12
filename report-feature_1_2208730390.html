@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>demo</td>
-      <td>12 Jul 2022, 06:27</td>
+      <td>12 Jul 2022, 08:22</td>
     </tr>
   </tbody>
 </table>
@@ -138,7 +138,7 @@ $(document).ready(function() {
           <td >0</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="757746817">0.757</td>
+          <td class="duration" data-value="745470318">0.745</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -230,7 +230,7 @@ $(document).ready(function() {
 
 <div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
-  <span class="name">url 'https://qa-in2.100ms.live/hmsapi'</span>
+  <span class="name">url baseUrl</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -250,7 +250,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details">
-        <pre>06:26:58.645 karate.env system property was: null 
+        <pre>08:22:45.667 karate.env system property was: null 
 </pre>
       </div>
     </div>
@@ -268,7 +268,7 @@ $(document).ready(function() {
 
 <div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
-  <span class="name">def tokengenerator = Java.type('utils.TokenGenerator');</span>
+  <span class="name">def utilities = Java.type('utils.Commons');</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -295,7 +295,7 @@ $(document).ready(function() {
 
 <div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
-  <span class="name">def token = tokengenerator.getToken();</span>
+  <span class="name">def token = utilities.getToken(appSecret, appAccessKey);</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -335,7 +335,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.756</span>
+  <span class="lead-duration duration">0.744</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
@@ -378,7 +378,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">path '/roles/default-templates'</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.016</span>
 
 </div>
 
@@ -432,7 +432,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
 
-  <span class="lead-duration duration">0.752</span>
+  <span class="lead-duration duration">0.717</span>
 
 </div>
 
@@ -450,26 +450,26 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-6" class="collapse collapsable-details">
-        <pre>06:26:58.659 request:
+        <pre>08:22:45.688 request:
 1 &gt; GET https://qa-in2.100ms.live/hmsapi/roles/default-templates
-1 &gt; authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2NTc2MDcyMTgsImFjY2Vzc19rZXkiOiI2MjgyMmRhZjA1YzY0ODdmOWU1NTY0NTUiLCJ0eXBlIjoibWFuYWdlbWVudCIsImV4cCI6MTY1NzY5MzYxOCwidmVyc2lvbiI6MiwiaWF0IjoxNjU3NjA3MTU4LCJqdGkiOiJjYjk5NmJjZC1hOTdjLTQ1N2YtOGM4OC1hNDYxNjIxNzg0M2MifQ.EOFQiAJ4p0GwFQTBCeJpDlF8A2ARcRrwvcv3zun4O-Q
+1 &gt; authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2NTc2MTQxNjUsImFjY2Vzc19rZXkiOiI2MjgyMmRhZjA1YzY0ODdmOWU1NTY0NTUiLCJ0eXBlIjoibWFuYWdlbWVudCIsImV4cCI6MTY1NzcwMDU2NSwidmVyc2lvbiI6MiwiaWF0IjoxNjU3NjE0MTA1LCJqdGkiOiI1ODcwZWQ0Mi0xYTY3LTRiZTctYjU1My1hYjMzODZkYjVkM2MifQ.cPAEiIyDBKPkICfl5ByYKBuWAlLyXFfwomQ5l-AudT8
 1 &gt; Host: qa-in2.100ms.live
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_332)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-06:26:59.399 response time in milliseconds: 739
+08:22:46.402 response time in milliseconds: 713
 1 &lt; 200
 1 &lt; server: istio-envoy
-1 &lt; date: Tue, 12 Jul 2022 06:26:59 GMT
+1 &lt; date: Tue, 12 Jul 2022 08:22:46 GMT
 1 &lt; content-type: application/json
 1 &lt; cache-control: no-store
-1 &lt; x-request-id: b54c2a51-79b5-4c7b-ad93-962e81876d74
+1 &lt; x-request-id: 41cc209e-4689-4f9e-a575-256c28547adc
 1 &lt; x-frame-options: SAMEORIGIN
 1 &lt; content-length: 10581
 1 &lt; vary: Origin
-1 &lt; x-envoy-upstream-service-time: 40
+1 &lt; x-envoy-upstream-service-time: 39
 1 &lt; content-security-policy: frame-ancestors none;
 1 &lt; strict-transport-security: max-age=31536000; includeSubDomains
 1 &lt; x-xss-protection: 1; mode=block
@@ -526,7 +526,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">print response</span>
 
-  <span class="lead-duration duration">0.003</span>
+  <span class="lead-duration duration">0.010</span>
 
 </div>
 
@@ -544,7 +544,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-7" class="collapse collapsable-details">
-        <pre>06:26:59.404 [print] {
+        <pre>08:22:46.414 [print] {
   &quot;templates&quot;: [
     {
       &quot;type&quot;: &quot;EDTECH&quot;,
