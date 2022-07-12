@@ -1,3 +1,4 @@
+@debug
 Feature: get usage stat tests
 
   Background:
@@ -10,4 +11,4 @@ Feature: get usage stat tests
     And header authorization = token
     When method get
     Then status 200
-    And print response
+    And match response == read('../../schema/usage_stats.json')

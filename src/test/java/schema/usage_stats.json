@@ -1,0 +1,12 @@
+{
+  "success": "#boolean",
+  "msg": "",
+  "daily": "#object",
+  "monthly":  "#object",
+  "overall": {
+    "participants": "#number",
+    "participant_duration":  "#number",
+    "sessions": "#number",
+    "rooms":  "#number"
+  },
+  "api_version": "#notnull"}
