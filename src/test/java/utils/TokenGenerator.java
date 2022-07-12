@@ -25,6 +25,6 @@ public class TokenGenerator {
      }
 
      public static int getRandomNumber(){
-       return  (int) Math.floor(Math.random() * 10000);
+       return  (int) Math.floor(Math.random() * 100000);
      }
 }

@@ -1,0 +1,68 @@
+{
+  "roleInfo": {
+    "role": "${roleName}",
+    "permissions": {
+      "mute": false,
+      "unmute": false,
+      "removeOthers": false,
+      "endRoom": false,
+      "changeRole": false,
+      "lockRoom": false,
+      "sendRoomState": false
+    },
+    "subscribeDegradation": true,
+    "priority": 1,
+    "chat": {
+      "privateMessage": []
+    },
+    "screenshare": {
+      "permissions": []
+    },
+    "annotation": {
+      "permissions": []
+    },
+    "virtualBackgrounds": {
+      "set": true,
+      "upload": false
+    },
+    "spotlight": {
+      "permissions": []
+    },
+    "raiseHand": {
+      "raiseOwn": false,
+      "lowerOthers": true
+    },
+    "googleDrive": {
+      "permissions": []
+    },
+    "youtube": {
+      "permissions": []
+    },
+    "advancedSettings": {
+      "publish": {
+        "audio": true,
+        "video": true,
+        "screenshare": true,
+        "params": {
+          "video": {
+            "bitRate": 300,
+            "frameRate": 30,
+            "codec": "vp8"
+          },
+          "screenshare": {
+            "bitRate": null,
+            "frameRate": 10,
+            "codec": "vp8"
+          }
+        }
+      },
+      "subscribe": {
+        "to": []
+      }
+    },
+    "video_quality": "_360p",
+    "screenshare_quality": "_1080p",
+    "default": false,
+    "video_aspect_ratio": "4:3"
+  }
+}

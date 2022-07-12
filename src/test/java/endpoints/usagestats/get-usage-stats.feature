@@ -1,4 +1,3 @@
-@debug
 Feature: get usage stat tests
 
   Background:
